@@ -1,0 +1,17 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+*~
+*.swp
+*.swo
+
+# Local domestic-wells replication inputs/outputs.
+# These are ignored while we determine what can be redistributed publicly.
+data/domestic_wells/input/source_shapefiles/*
+!data/domestic_wells/input/source_shapefiles/.gitkeep
+data/domestic_wells/input/working_unzipped/*
+!data/domestic_wells/input/working_unzipped/.gitkeep
+data/domestic_wells/output/*
+!data/domestic_wells/output/.gitkeep
