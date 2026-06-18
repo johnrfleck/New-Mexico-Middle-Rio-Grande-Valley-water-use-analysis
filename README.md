@@ -1,28 +1,49 @@
-# Middle Rio Grande Water Accounting
+# New Mexico Middle Rio Grande Valley Water Use Analysis
 
-This repository contains public, reproducible analysis materials for work on water accounting in New Mexico's Middle Rio Grande.
+This repository supports public review and replication of analyses related to water use in New Mexico's Middle Rio Grande Valley.
 
-The repository is organized by analysis lane. The first lane focuses on Net Flow Reduction (NFR) between Otowi and San Marcial. A second lane supports a domestic-wells boundary analysis. Additional lanes may be added as the work develops.
+The first analysis lane focuses on **Net Flow Reduction (NFR)** between the Rio Grande at Otowi Bridge and the downstream San Marcial gages. NFR is an accounting measure:
 
-## Repository Structure
+`NFR = upstream inflow - downstream outflow`
 
-- `notebooks/`: public analysis notebooks, split by topic.
-- `data/`: small public data files and instructions for external data inputs.
-- `docs/`: methodology notes and reader-facing documentation.
-- `gee/`: Google Earth Engine scripts or notes used to generate spatial/remote-sensing inputs.
+It is not, by itself, a direct measurement of consumptive use. The difference can reflect human water use, riparian vegetation, evaporation, groundwater-surface water interactions, channel and reservoir operations, measurement issues, and climate variability. The goal of the notebooks is to make the accounting transparent enough that these possible explanations can be examined carefully.
 
-## Notebook Lanes
+## Current Contents
+
+The repository currently includes the first public NFR notebook:
+
+- `notebooks/nfr/01_define_nfr_and_build_series.ipynb`
+
+That notebook downloads USGS daily streamflow data, applies a three-gage completeness screen, converts daily mean discharge to annual acre-feet, and writes an annual NFR table.
+
+Additional notebooks, data notes, Google Earth Engine scripts, and domestic-wells analysis materials will be added as they are reviewed and rewritten for public use.
+
+## Repository Layout
 
 - `notebooks/nfr/`: Net Flow Reduction notebooks.
-- `notebooks/domestic_wells/`: domestic-wells boundary replication notebooks.
+- `notebooks/domestic_wells/`: domestic-wells analysis notebooks, when ready.
+- `data/nfr/`: derived NFR data products created by the notebooks.
+- `data/domestic_wells/`: instructions and outputs for domestic-wells analyses. Large source spatial datasets are not committed.
+- `docs/`: methodology notes and source documentation.
+- `gee/`: Google Earth Engine scripts or notes used to generate spatial and remote-sensing inputs.
 
-## Data Lanes
+## Running The Notebook
 
-- `data/nfr/`: derived tabular data used by the NFR notebooks.
-- `data/domestic_wells/`: input instructions and derived outputs for the domestic-wells analysis. Large source spatial datasets are not expected to be committed.
+The current notebook is written in R and uses the USGS `dataRetrieval` package.
+
+Required R packages include:
+
+- `dataRetrieval`
+- `dplyr`
+- `tidyr`
+- `readr`
+- `ggplot2`
+- `scales`
+
+Open the notebook in Jupyter or another notebook environment with an R kernel, then run the cells in order.
 
 ## Status
 
-This public package is being assembled from a larger private working directory. Notebooks and data should be promoted here only after review.
+This is an active public working repository. The material here is being shared early to make the analysis easier to inspect, question, and improve.
 
-No public release should be inferred until the notebooks, data provenance notes, and license have been reviewed.
+Interpretive claims should be treated as provisional unless they are supported directly by the notebooks and accompanying documentation.
