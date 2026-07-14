@@ -10,13 +10,18 @@ It is not, by itself, a direct measurement of consumptive use. The difference ca
 
 ## Current Contents
 
-The repository currently includes the first public NFR notebook:
+- `notebooks/nfr/01_define_nfr_and_build_series.ipynb` (R) — downloads USGS daily streamflow data,
+  applies a three-gage completeness screen, converts daily mean discharge to annual acre-feet, and
+  writes an annual NFR table.
+- `notebooks/domestic_wells/domestic_wells_replication.ipynb` (Python) — counts active domestic wells
+  and their permitted diversion inside the MRGCD jurisdictional area and the ABCWUA service area,
+  reproducing the published figures (MRGCD 24,239 wells / 67,389 AF; ABCWUA 8,557 / 24,406). Prints
+  the full counting ladder, validates against the published numbers, and charts cumulative permitted
+  diversion over time. Source shapefiles are not committed — see
+  `data/domestic_wells/README.md` for where to obtain them.
 
-- `notebooks/nfr/01_define_nfr_and_build_series.ipynb`
-
-That notebook downloads USGS daily streamflow data, applies a three-gage completeness screen, converts daily mean discharge to annual acre-feet, and writes an annual NFR table.
-
-Additional notebooks, data notes, Google Earth Engine scripts, and domestic-wells analysis materials will be added as they are reviewed and rewritten for public use.
+Additional notebooks, data notes, and Google Earth Engine scripts will be added as they are reviewed
+and rewritten for public use.
 
 ## Repository Layout
 
@@ -27,20 +32,18 @@ Additional notebooks, data notes, Google Earth Engine scripts, and domestic-well
 - `docs/`: methodology notes and source documentation.
 - `gee/`: Google Earth Engine scripts or notes used to generate spatial and remote-sensing inputs.
 
-## Running The Notebook
+## Running The Notebooks
 
-The current notebook is written in R and uses the USGS `dataRetrieval` package.
+Notebooks are written in the language each analysis was actually done in; open each in Jupyter (or
+any notebook environment with the right kernel) and run the cells in order.
 
-Required R packages include:
+**`notebooks/nfr/` (R kernel)** — uses the USGS `dataRetrieval` package. Required R packages:
+`dataRetrieval`, `dplyr`, `tidyr`, `readr`, `ggplot2`, `scales`.
 
-- `dataRetrieval`
-- `dplyr`
-- `tidyr`
-- `readr`
-- `ggplot2`
-- `scales`
-
-Open the notebook in Jupyter or another notebook environment with an R kernel, then run the cells in order.
+**`notebooks/domestic_wells/` (Python 3 kernel)** — install dependencies with
+`pip install -r requirements.txt` (`geopandas`, `pandas`, `shapely`, `matplotlib`). Download the
+three source shapefiles first (see `data/domestic_wells/README.md`); the notebook unzips them on
+first run.
 
 ## Status
 

@@ -1,0 +1,11 @@
+# Python dependencies for the domestic-wells replication notebook
+#   notebooks/domestic_wells/domestic_wells_replication.ipynb
+# Python 3.10+ recommended.
+#
+# (The NFR notebook under notebooks/nfr/ is written in R, not Python — see README.md
+#  for its required R packages.)
+
+geopandas>=1.0    # GeoDataFrame.union_all() requires geopandas 1.0+
+pandas>=2.0
+shapely>=2.0
+matplotlib>=3.7

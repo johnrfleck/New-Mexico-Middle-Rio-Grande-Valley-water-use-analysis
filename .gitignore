@@ -15,3 +15,4 @@ data/domestic_wells/input/working_unzipped/*
 !data/domestic_wells/input/working_unzipped/.gitkeep
 data/domestic_wells/output/*
 !data/domestic_wells/output/.gitkeep
+!data/domestic_wells/output/README.md
