@@ -15,7 +15,7 @@ It is not, by itself, a direct measurement of consumptive use. The difference ca
   writes an annual NFR table.
 - `notebooks/domestic_wells/domestic_wells_replication.ipynb` (Python) — counts active domestic wells
   and their permitted diversion inside the MRGCD jurisdictional area and the ABCWUA service area,
-  reproducing the published figures (MRGCD 24,239 wells / 67,389 AF; ABCWUA 8,557 / 24,406). Prints
+  reproducing the published figures (MRGCD 22,916 wells / 63,477 AF; ABCWUA 7,901 / 22,465). Prints
   the full counting ladder, validates against the published numbers, and charts cumulative permitted
   diversion over time. Source shapefiles are not committed — see
   `data/domestic_wells/README.md` for where to obtain them.

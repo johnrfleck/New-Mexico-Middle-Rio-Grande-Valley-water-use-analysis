@@ -63,7 +63,8 @@ The Albuquerque Bernalillo County Water Utility Authority drinking-water service
 > **⚠️ The ABCWUA boundary is provisional.** The OSE PWS polygon (used here) and ABCWUA's own
 > "Know Your Zone" map (<https://www.abcwua.org/?da_image=know-your-zone-map-2>) disagree by roughly
 > **~1,200 domestic rights**. The published analysis uses the OSE polygon as the more **conservative**
-> footprint (8,557 rights vs. ~9,738) and flags the ABCWUA count as provisional. Treat it as such.
+> footprint (8,557 vs. ~9,738 unique rights; the published headline is the solidly-inside **7,901**)
+and flags the ABCWUA count as provisional. Treat it as such.
 
 ---
 

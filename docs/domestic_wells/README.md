@@ -14,8 +14,8 @@ The core question is how many domestic wells, categorized as “active” by the
 
 | Boundary | Domestic wells | Permitted diversion |
 |---|--:|--:|
-| MRGCD | 24,239 | 67,389 acre-feet/yr |
-| ABCWUA | 8,557 | 24,406 acre-feet/yr |
+| MRGCD | 22,916 | 63,477 acre-feet/yr |
+| ABCWUA | 7,901 | 22,465 acre-feet/yr |
 
 ## The counting ladder
 
@@ -25,13 +25,14 @@ Wells are counted in four steps. The gaps between them are the modeling choices,
    (`DOM`, `DOL`, `PDM`, `DCN`) whose location falls inside the boundary.
 2. **Physical well locations** — drop OSE administrative records (`CLW` change-of-location filings
    and `-X` administrative suffixes) that are not new wells on the ground.
-3. **Unique water rights** — **the headline.** Multiple wellheads of one right are deduplicated to
+3. **Unique water rights** — a reference count. Multiple wellheads of one right are deduplicated to
    the base right (`RG-NNNNN`), and the right's permitted diversion is counted once (its AF is shared
-   across its `-POD2 / -POD3` wellheads).
-4. **Unique rights, solidly inside** — a robustness check that drops boundary-ambiguous
-   PLSS-centroid stacks (a confirmed stack of ≥10 co-located wells whose ~1-square-mile section could
-   straddle the boundary line). Reported for transparency; it moves the headline only slightly
-   (MRGCD 24,239 → 22,916; ABCWUA 8,557 → 7,901).
+   across its `-POD2 / -POD3` wellheads). (MRGCD 24,239 / ABCWUA 8,557.)
+4. **Unique rights, solidly inside** — **the headline.** Drops boundary-ambiguous
+   PLSS-centroid stacks: a confirmed stack of ≥10 co-located wells (no quarter-quarter refinement)
+   is counted only when its entire ~1-square-mile section box is inside the boundary; stacks whose
+   box straddles the line are dropped, because we cannot confirm those wells are inside. This is the
+   conservative, published number (MRGCD 22,916 / ABCWUA 7,901).
 
 ## Key caveats
 
