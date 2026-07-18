@@ -9,9 +9,9 @@ project:
   logo: docs/logo.png
 
 execute:
-  execute_notebooks: cache
+  execute_notebooks: 'off'
   timeout: 120
-  allow_errors: true
+  allow_errors: false
 
 parse:
   myst_enable_extensions:

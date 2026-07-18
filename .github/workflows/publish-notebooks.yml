@@ -25,10 +25,18 @@ jobs:
           pip install jupyter-book ghp-import
 
       - name: Build the book
-        run: jupyter-book build . -v
+        run: |
+          set -x
+          jupyter-book build . 2>&1 | tee build.log
+          echo "=== Build exit code: $? ==="
+          cat build.log
 
       - name: Check build output
-        run: ls -la _build/html/ || echo "Build output directory not found"
+        if: always()
+        run: |
+          echo "Checking _build directory..."
+          ls -la _build/ 2>&1 || echo "No _build directory"
+          ls -la _build/html/ 2>&1 || echo "No _build/html directory"
 
       - name: Push to GitHub Pages
         if: success() && github.ref == 'refs/heads/main'
