@@ -9,9 +9,12 @@ project:
   logo: docs/logo.png
 
 execute:
-  execute_notebooks: cache
-  timeout: 120
+  execute_notebooks: force
+  timeout: 180
   allow_errors: true
+  # Skip R notebooks for now (R not installed in GitHub Actions)
+  exclude_patterns:
+    - "notebooks/nfr/.*"
 
 parse:
   myst_enable_extensions:
