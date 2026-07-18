@@ -66,3 +66,10 @@ download needed; the AOI and rasters are both fetched live.
 This is an active public working repository. The material here is being shared early to make the analysis easier to inspect, question, and improve.
 
 Interpretive claims should be treated as provisional unless they are supported directly by the notebooks and accompanying documentation.
+
+## License
+
+- **Code** (notebooks, scripts) — [MIT License](LICENSE).
+- **Written content and figures** (`docs/`, methodology notes, charts) — [CC BY 4.0](LICENSE-CONTENT.md).
+
+© 2026 John Fleck and Bob Berrens.
