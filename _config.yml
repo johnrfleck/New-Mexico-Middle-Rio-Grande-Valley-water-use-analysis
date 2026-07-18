@@ -1,0 +1,13 @@
+title: NM Middle Rio Grande Water Analysis
+description: Public replication notebooks and data for water use research
+theme: jekyll-theme-minimal
+author: John Fleck, Bob Berrens
+show_downloads: false
+
+exclude:
+  - notebooks/
+  - data/source/
+  - .gitignore
+
+plugins:
+  - jekyll-sitemap

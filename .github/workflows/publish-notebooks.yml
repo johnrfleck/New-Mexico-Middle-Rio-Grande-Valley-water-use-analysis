@@ -1,0 +1,51 @@
+name: Convert Notebooks to HTML
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'notebooks/**/*.ipynb'
+      - 'docs/**/*.md'
+      - '_config.yml'
+      - '.github/workflows/publish-notebooks.yml'
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install nbconvert jupyter
+
+      - name: Create output directory
+        run: mkdir -p docs/notebooks
+
+      - name: Convert domestic_wells notebook
+        run: |
+          nbconvert --to html \
+            --output-dir=docs/notebooks/domestic_wells \
+            --allow-errors \
+            notebooks/domestic_wells/domestic_wells_replication.ipynb
+          mkdir -p docs/notebooks/domestic_wells
+          mv docs/notebooks/domestic_wells_replication.html docs/notebooks/domestic_wells/index.html
+
+      - name: Convert nfr notebooks
+        run: |
+          mkdir -p docs/notebooks/nfr
+          nbconvert --to html \
+            --output-dir=docs/notebooks/nfr \
+            --allow-errors \
+            notebooks/nfr/01_define_nfr_and_build_series.ipynb
+
+      - name: Commit HTML outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/notebooks/
+          git commit -m "Auto-convert notebooks to HTML" || true
+          git push
