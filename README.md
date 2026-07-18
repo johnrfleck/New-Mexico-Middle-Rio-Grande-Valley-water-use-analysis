@@ -2,7 +2,7 @@
 
 This repository supports public review and replication of analyses related to water use in New Mexico's Middle Rio Grande Valley.
 
-**📊 View the analysis site:** https://[your-username].github.io/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis/ (once GitHub Pages is enabled)
+**📊 View the analysis site:** https://johnrfleck.github.io/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis/
 
 The first analysis lane focuses on **Net Flow Reduction (NFR)** between the Rio Grande at Otowi Bridge and the downstream San Marcial gages. NFR is an accounting measure:
 
