@@ -5,7 +5,12 @@
 # (The NFR notebook under notebooks/nfr/ is written in R, not Python — see README.md
 #  for its required R packages.)
 
+# Replication notebook
 geopandas>=1.0    # GeoDataFrame.union_all() requires geopandas 1.0+
 pandas>=2.0
 shapely>=2.0
 matplotlib>=3.7
+
+# Documentation site (Jupyter Book)
+jupyter-book>=0.15
+ghp-import>=2.1

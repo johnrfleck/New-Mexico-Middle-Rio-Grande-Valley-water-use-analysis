@@ -1,4 +1,4 @@
-name: Convert Notebooks to HTML
+name: Build Jupyter Book
 
 on:
   push:
@@ -8,10 +8,11 @@ on:
       - 'notebooks/**/*.ipynb'
       - 'docs/**/*.md'
       - '_config.yml'
+      - '_toc.yml'
       - '.github/workflows/publish-notebooks.yml'
 
 jobs:
-  convert:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,32 +21,13 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install nbconvert jupyter
-
-      - name: Create output directory
-        run: mkdir -p docs/notebooks
-
-      - name: Convert domestic_wells notebook
         run: |
-          nbconvert --to html \
-            --output-dir=docs/notebooks/domestic_wells \
-            --allow-errors \
-            notebooks/domestic_wells/domestic_wells_replication.ipynb
-          mkdir -p docs/notebooks/domestic_wells
-          mv docs/notebooks/domestic_wells_replication.html docs/notebooks/domestic_wells/index.html
+          pip install jupyter-book ghp-import
 
-      - name: Convert nfr notebooks
-        run: |
-          mkdir -p docs/notebooks/nfr
-          nbconvert --to html \
-            --output-dir=docs/notebooks/nfr \
-            --allow-errors \
-            notebooks/nfr/01_define_nfr_and_build_series.ipynb
+      - name: Build the book
+        run: jupyter-book build .
 
-      - name: Commit HTML outputs
+      - name: Push to GitHub Pages
+        if: github.ref == 'refs/heads/main'
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/notebooks/
-          git commit -m "Auto-convert notebooks to HTML" || true
-          git push
+          ghp-import -n -p -f _build/html

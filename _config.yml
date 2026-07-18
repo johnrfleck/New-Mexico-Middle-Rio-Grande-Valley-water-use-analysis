@@ -1,13 +1,33 @@
-title: NM Middle Rio Grande Water Analysis
-description: Public replication notebooks and data for water use research
-theme: jekyll-theme-minimal
-author: John Fleck, Bob Berrens
-show_downloads: false
+# Jupyter Book configuration
 
-exclude:
-  - notebooks/
-  - data/source/
-  - .gitignore
+project:
+  title: NM Middle Rio Grande Water Analysis
+  description: Public replication notebooks and data for water use research
+  authors:
+    - name: John Fleck
+    - name: Bob Berrens
+  logo: docs/logo.png
 
-plugins:
-  - jekyll-sitemap
+execute:
+  execute_notebooks: cache
+  timeout: 120
+  allow_errors: true
+
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - dollarmath
+    - linkify
+
+html:
+  favicon: docs/logo.png
+  use_issues_button: true
+  use_repository_button: true
+  repository_url: https://github.com/johnrfleck/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis
+  extra_navbar: |
+    <a href="https://fleck-berrens.org" target="_blank">Fleck–Berrens Lab</a>
+
+sphinx:
+  config:
+    html_theme_options:
+      navigation_with_keys: true

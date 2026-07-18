@@ -1,0 +1,19 @@
+<svg width="372" height="96" viewBox="0 0 372 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fleck-Berrens Lab">
+  <!-- icon: 44x44 mark scaled to 56 and centered vertically -->
+  <g transform="translate(16,20) scale(1.2727)">
+    <rect x="1" y="1" width="42" height="42" rx="9" fill="#0f172a"/>
+    <g stroke="#334155" stroke-width="1">
+      <line x1="15" y1="4" x2="15" y2="40"/>
+      <line x1="29" y1="4" x2="29" y2="40"/>
+      <line x1="4" y1="15" x2="40" y2="15"/>
+      <line x1="4" y1="29" x2="40" y2="29"/>
+    </g>
+    <path d="M22 5 C14 13, 30 18, 22 24 S12 33, 22 39" stroke="#2dd4bf" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+    <circle cx="22" cy="5" r="2" fill="#5eead4"/>
+    <circle cx="22" cy="24" r="2.6" fill="#0f172a" stroke="#5eead4" stroke-width="1.6"/>
+    <circle cx="22" cy="39" r="2" fill="#5eead4"/>
+  </g>
+  <!-- wordmark -->
+  <text x="92" y="52" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="-0.3" fill="#0f172a">Fleck<tspan fill="#0f766e">&#8211;</tspan>Berrens</text>
+  <text x="93" y="73" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2.9" fill="#0f766e">LAB</text>
+</svg>
