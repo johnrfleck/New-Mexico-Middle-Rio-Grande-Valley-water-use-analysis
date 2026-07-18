@@ -1,15 +1,21 @@
-# Python dependencies for the domestic-wells replication notebook
-#   notebooks/domestic_wells/domestic_wells_replication.ipynb
+# Python dependencies for the domestic-wells and quadrant-map replication notebooks.
 # Python 3.10+ recommended.
 #
 # (The NFR notebook under notebooks/nfr/ is written in R, not Python — see README.md
 #  for its required R packages.)
 
-# Replication notebook
+# notebooks/domestic_wells/domestic_wells_replication.ipynb
 geopandas>=1.0    # GeoDataFrame.union_all() requires geopandas 1.0+
 pandas>=2.0
 shapely>=2.0
 matplotlib>=3.7
+
+# notebooks/quadrant_map/quadrant_map_replication.ipynb
+earthengine-api>=1.0
+requests>=2.28
+rasterio>=1.3
+scipy>=1.10
+numpy>=1.24
 
 # Documentation site (Jupyter Book)
 # Pinned <2 — Jupyter Book 2.x is a MyST-based rewrite with a different config

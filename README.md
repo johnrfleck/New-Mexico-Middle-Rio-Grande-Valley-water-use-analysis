@@ -21,6 +21,12 @@ It is not, by itself, a direct measurement of consumptive use. The difference ca
   the full counting ladder, validates against the published numbers, and charts cumulative permitted
   diversion over time. Source shapefiles are not committed — see
   `data/domestic_wells/README.md` for where to obtain them.
+- `notebooks/quadrant_map/quadrant_map_replication.ipynb` (Python) — reproduces "The Greening (and
+  Browning) of the Albuquerque Metro Area," a five-class map of where water use (effective
+  evapotranspiration) is rising or falling across the metro area, 2001–2024. Pulls water-use data
+  live from Google Earth Engine (requires your own free GEE account — the notebook walks through
+  signup) and the area boundary live from the Census Bureau's public TIGERweb API. No data
+  download needed.
 
 Additional notebooks, data notes, and Google Earth Engine scripts will be added as they are reviewed
 and rewritten for public use.
@@ -28,9 +34,11 @@ and rewritten for public use.
 ## Repository Layout
 
 - `notebooks/nfr/`: Net Flow Reduction notebooks.
-- `notebooks/domestic_wells/`: domestic-wells analysis notebooks, when ready.
+- `notebooks/domestic_wells/`: domestic-wells analysis notebooks.
+- `notebooks/quadrant_map/`: water-use trend quadrant-map notebook (Google Earth Engine).
 - `data/nfr/`: derived NFR data products created by the notebooks.
 - `data/domestic_wells/`: instructions and outputs for domestic-wells analyses. Large source spatial datasets are not committed.
+- `data/quadrant_map/`: notes on Earth Engine setup; notebook outputs are written to `output/` (not committed).
 - `docs/`: methodology notes and source documentation.
 - `gee/`: Google Earth Engine scripts or notes used to generate spatial and remote-sensing inputs.
 
@@ -46,6 +54,12 @@ any notebook environment with the right kernel) and run the cells in order.
 `pip install -r requirements.txt` (`geopandas`, `pandas`, `shapely`, `matplotlib`). Download the
 three source shapefiles first (see `data/domestic_wells/README.md`); the notebook unzips them on
 first run.
+
+**`notebooks/quadrant_map/` (Python 3 kernel)** — install dependencies with
+`pip install -r requirements.txt` (`earthengine-api`, `geopandas`, `requests`, `rasterio`, `scipy`,
+`matplotlib`). Requires your own free Google Earth Engine account and Google Cloud project — the
+notebook's setup section walks through the five-minute signup and authentication. No manual data
+download needed; the AOI and rasters are both fetched live.
 
 ## Status
 

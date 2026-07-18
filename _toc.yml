@@ -8,3 +8,8 @@ chapters:
     sections:
       - file: notebooks/domestic_wells/domestic_wells_replication
         title: Interactive Replication Notebook
+  - file: docs/quadrant_map/README
+    title: Where Water Use Is Rising and Falling
+    sections:
+      - file: notebooks/quadrant_map/quadrant_map_replication
+        title: Interactive Replication Notebook

@@ -16,3 +16,7 @@ data/domestic_wells/input/working_unzipped/*
 data/domestic_wells/output/*
 !data/domestic_wells/output/.gitkeep
 !data/domestic_wells/output/README.md
+
+# Local quadrant-map notebook outputs (downloaded rasters + rendered PNG).
+data/quadrant_map/output/*
+!data/quadrant_map/output/.gitkeep
