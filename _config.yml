@@ -1,12 +1,8 @@
-# Jupyter Book configuration
+# Jupyter Book configuration (classic v1 / Sphinx-based schema)
 
-project:
-  title: NM Middle Rio Grande Water Analysis
-  description: Public replication notebooks and data for water use research
-  authors:
-    - name: John Fleck
-    - name: Bob Berrens
-  logo: docs/logo.png
+title: NM Middle Rio Grande Water Analysis
+author: John Fleck & Bob Berrens
+logo: docs/logo.png
 
 execute:
   execute_notebooks: 'off'
@@ -23,9 +19,12 @@ html:
   favicon: docs/logo.png
   use_issues_button: true
   use_repository_button: true
-  repository_url: https://github.com/johnrfleck/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis
   extra_navbar: |
     <a href="https://fleck-berrens.org" target="_blank">Fleck–Berrens Lab</a>
+
+repository:
+  url: https://github.com/johnrfleck/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis
+  branch: main
 
 sphinx:
   config:
