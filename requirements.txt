@@ -12,5 +12,7 @@ shapely>=2.0
 matplotlib>=3.7
 
 # Documentation site (Jupyter Book)
-jupyter-book>=0.15
+# Pinned <2 — Jupyter Book 2.x is a MyST-based rewrite with a different config
+# format (myst.yml). Our _config.yml/_toc.yml are classic v1 (Sphinx-based).
+jupyter-book>=0.15,<2
 ghp-import>=2.1
