@@ -8,8 +8,3 @@ chapters:
     sections:
       - file: notebooks/domestic_wells/domestic_wells_replication
         title: Interactive Replication Notebook
-  - file: docs/nfr/README
-    title: Net Flow Reduction Analysis
-    sections:
-      - file: notebooks/nfr/01_define_nfr_and_build_series
-        title: R Analysis Notebook
