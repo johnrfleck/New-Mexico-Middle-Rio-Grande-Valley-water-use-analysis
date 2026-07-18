@@ -20,13 +20,6 @@ html:
   favicon: docs/logo.png
   use_issues_button: true
   use_repository_button: true
-  extra_navbar: |
-    <a href="https://fleck-berrens.org" target="_blank">Fleck–Berrens Lab</a>
-  extra_footer: |
-    <p>Code licensed
-    <a href="https://github.com/johnrfleck/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis/blob/main/LICENSE">MIT</a>.
-    Written content and figures licensed
-    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
 
 repository:
   url: https://github.com/johnrfleck/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis
@@ -36,3 +29,10 @@ sphinx:
   config:
     html_theme_options:
       navigation_with_keys: true
+      extra_navbar: |
+        <a href="https://fleck-berrens.org" target="_blank">Fleck–Berrens Lab</a>
+      extra_footer: |
+        <p>Code licensed
+        <a href="https://github.com/johnrfleck/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis/blob/main/LICENSE">MIT</a>.
+        Written content and figures licensed
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
