@@ -25,7 +25,7 @@ jobs:
           pip install jupyter-book ghp-import
 
       - name: Build the book
-        run: jupyter-book build . --keep-going
+        run: jupyter-book build .
 
       - name: Push to GitHub Pages
         if: github.ref == 'refs/heads/main'
