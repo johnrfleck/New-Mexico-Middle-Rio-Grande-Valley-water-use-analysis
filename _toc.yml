@@ -13,3 +13,8 @@ chapters:
     sections:
       - file: notebooks/quadrant_map/quadrant_map_replication
         title: Interactive Replication Notebook
+  - file: docs/water_access_categories/README
+    title: Lot Size and Water Use by Water-Access Category
+    sections:
+      - file: notebooks/water_access_categories/water_access_categories_replication
+        title: Interactive Replication Notebook

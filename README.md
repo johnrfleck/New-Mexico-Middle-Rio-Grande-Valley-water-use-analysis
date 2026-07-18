@@ -27,6 +27,12 @@ It is not, by itself, a direct measurement of consumptive use. The difference ca
   live from Google Earth Engine (requires your own free GEE account — the notebook walks through
   signup) and the area boundary live from the Census Bureau's public TIGERweb API. No data
   download needed.
+- `notebooks/water_access_categories/water_access_categories_replication.ipynb` (Python) —
+  reproduces three companion charts comparing lot size and water use across Bernalillo County
+  residential parcels inside the ABCWUA service area, split by water access (ABCWUA only / + well
+  / + ditch / + well + ditch). Fetches parcel geometry live from the county's public GIS service;
+  two of three source shapefiles are public downloads and one (MRGCD's ISOlog layer) must be
+  requested directly from MRGCD. Computes per-parcel effective ET via Google Earth Engine.
 
 Additional notebooks, data notes, and Google Earth Engine scripts will be added as they are reviewed
 and rewritten for public use.
@@ -36,9 +42,11 @@ and rewritten for public use.
 - `notebooks/nfr/`: Net Flow Reduction notebooks.
 - `notebooks/domestic_wells/`: domestic-wells analysis notebooks.
 - `notebooks/quadrant_map/`: water-use trend quadrant-map notebook (Google Earth Engine).
+- `notebooks/water_access_categories/`: lot-size / water-use-by-category notebook (Google Earth Engine).
 - `data/nfr/`: derived NFR data products created by the notebooks.
 - `data/domestic_wells/`: instructions and outputs for domestic-wells analyses. Large source spatial datasets are not committed.
 - `data/quadrant_map/`: notes on Earth Engine setup; notebook outputs are written to `output/` (not committed).
+- `data/water_access_categories/`: instructions for the three source shapefiles; notebook outputs are written to `output/` (not committed).
 - `docs/`: methodology notes and source documentation.
 - `gee/`: Google Earth Engine scripts or notes used to generate spatial and remote-sensing inputs.
 
@@ -60,6 +68,13 @@ first run.
 `matplotlib`). Requires your own free Google Earth Engine account and Google Cloud project — the
 notebook's setup section walks through the five-minute signup and authentication. No manual data
 download needed; the AOI and rasters are both fetched live.
+
+**`notebooks/water_access_categories/` (Python 3 kernel)** — install dependencies with
+`pip install -r requirements.txt` (`earthengine-api`, `geopandas`, `pandas`, `requests`,
+`shapely`, `matplotlib`). Requires your own free Google Earth Engine account (same setup as
+`quadrant_map`). Download two public shapefiles and request one from MRGCD first (see
+`data/water_access_categories/README.md`); parcel geometry is fetched live. The per-parcel
+Earth Engine step is slow — expect tens of minutes for the full parcel population.
 
 ## Status
 

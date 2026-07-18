@@ -20,3 +20,11 @@ data/domestic_wells/output/*
 # Local quadrant-map notebook outputs (downloaded rasters + rendered PNG).
 data/quadrant_map/output/*
 !data/quadrant_map/output/.gitkeep
+
+# Local water-access-categories replication inputs/outputs.
+data/water_access_categories/input/source_shapefiles/*
+!data/water_access_categories/input/source_shapefiles/.gitkeep
+data/water_access_categories/input/working_unzipped/*
+!data/water_access_categories/input/working_unzipped/.gitkeep
+data/water_access_categories/output/*
+!data/water_access_categories/output/.gitkeep
