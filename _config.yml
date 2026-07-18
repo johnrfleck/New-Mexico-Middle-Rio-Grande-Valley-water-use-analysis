@@ -29,9 +29,8 @@ sphinx:
   config:
     html_theme_options:
       navigation_with_keys: true
-      extra_navbar: |
-        <a href="https://fleck-berrens.org" target="_blank">Fleck–Berrens Lab</a>
       extra_footer: |
+        <p><a href="https://fleck-berrens.org" target="_blank">Fleck–Berrens Lab</a></p>
         <p>Code licensed
         <a href="https://github.com/johnrfleck/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis/blob/main/LICENSE">MIT</a>.
         Written content and figures licensed
