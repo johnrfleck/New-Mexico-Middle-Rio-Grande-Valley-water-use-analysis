@@ -46,11 +46,23 @@ along the river channel, with the metro-wide pattern otherwise matching closely.
   pixel distribution. The same pixel could classify differently over a different or
   differently-shaped AOI — class assignments are not comparable across geographies.
 - **The 0.7× precipitation coefficient is a modeling choice**, not a locally calibrated physical
-  constant. A different coefficient would shift the effective-ET baseline (and, to a lesser
-  degree, the trend).
+  constant. It follows the FAO rule-of-thumb effective-rainfall fraction for arid regions with
+  moderate-intensity rainfall (Allen et al., 1998; Brouwer & Heibloem, 1986) rather than a
+  site-calibrated estimate. A different coefficient would shift the effective-ET baseline (and, to
+  a lesser degree, the trend).
 - **OpenET resolution and uncertainty.** OpenET is itself an ensemble of six remote-sensing ET
   models, well-validated at agricultural field scale but carrying more uncertainty over
   heterogeneous urban land cover. Read this as a neighborhood-scale pattern, not a parcel- or
   lot-level measurement.
 - **A fresh run will not exactly match the published figure** — beyond the AOI simplification
   above, OpenET occasionally revises its ensemble methodology and underlying model versions.
+
+## References
+
+Allen, R. G., Pereira, L. S., Raes, D., & Smith, M. (1998). *Crop evapotranspiration: Guidelines
+for computing crop water requirements* (FAO Irrigation and Drainage Paper No. 56). Food and
+Agriculture Organization of the United Nations. https://openknowledge.fao.org/handle/20.500.14283/cd6621en
+
+Brouwer, C., & Heibloem, M. (1986). *Irrigation water management: Irrigation water needs*
+(Training Manual No. 3). Food and Agriculture Organization of the United Nations.
+https://www.fao.org/4/s2022e/s2022e00.htm
