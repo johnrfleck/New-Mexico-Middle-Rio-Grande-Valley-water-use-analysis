@@ -87,4 +87,4 @@ Interpretive claims should be treated as provisional unless they are supported d
 - **Code** (notebooks, scripts) — [MIT License](LICENSE).
 - **Written content and figures** (`docs/`, methodology notes, charts) — [CC BY 4.0](LICENSE-CONTENT.md).
 
-© 2026 John Fleck and Bob Berrens.
+© 2026 John Fleck and Robert P. Berrens.
