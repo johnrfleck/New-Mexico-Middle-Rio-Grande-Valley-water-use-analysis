@@ -27,7 +27,9 @@ source of truth; this is a plain-language overview.
 
 The core question is how many domestic wells, categorized as “active” by the New Mexico Office of State Engineer, are located inside the boundaries of the Middle Rio Grande Conservancy District jurisdictional area and the Albuquerque Bernalillo County Water Utility Authority service area, and what are the legally permitted diversions from those wells.
 
+We have chosen these areas for two reasons. The MRGCD jurisdictional boundary provides a good proxy for the Middle Rio Grande Valley floor, where shallow aquifers make well drilling and groundwater pumping cheap. The ABCWUA service area represents an area where expensive, regulated water is available through the municipal system, but domestic well users opt for cheaper and unregulated water for outdoor irrigation. The result is a concentration of what appear to be areas of rising consumptive water use in those parts of the greater Albuquerque urban area where domestic wells are common, while consumptive water use is declining in much of the urban area served only by municipal water.
 
+The resulting pattern, identified in the work that follows, is residential lots with domestic wells that tend to be larger and greener, meaning with higher water use per acre, than those limited to ABCWUA supplies.
 
 ## Published result (OSE POD vintage 2026-06-15)
 
@@ -58,7 +60,7 @@ Wells are counted in four steps. The gaps between them are the modeling choices,
 - **Permitted, not consumed.** `total_div` is the permitted annual diversion — an administrative
   ceiling, not measured pumping or consumptive use.
 - **POD location quality.** Most OSE coordinates are PLSS-cell centroids, not field GPS. The analysis
-  only tests point-in-boundary and makes no parcel-level claims.
+  only tests point-in-boundary and makes no parcel-level claims. Parcel-level analysis can be found in the notebooks that follow this one.
 - **ABCWUA boundary is provisional.** The OSE Public Water System polygon (used here) and ABCWUA's own
   service-zone map disagree by ~1,200 rights; the OSE polygon is the more conservative choice. See
   `data/domestic_wells/README.md`.
