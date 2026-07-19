@@ -1,6 +1,9 @@
 # Water Use Analysis: New Mexico's Middle Rio Grande Valley
 
-This open research project makes the accounting and data behind water-use analyses transparent and reproducible. All notebooks are executable—download the repo, install dependencies, and run the analyses yourself.
+New Mexico’s Middle Rio Grande Valley faces acute water management challenges. Rio Grande inflow is declining, consumptive use of water is increasing, and large uncertainties - both hydrologic and policy-related - face efforts to bring supply and use into balance.
+
+This project documents an effort to bring new tools to bear on the problem, to better inform decision making. Based in an interdisciplinary effort among students and faculty from the University of New Mexico Water Resources Program, the UNM Department of Economics, and the Utton Transboundary Resources Center at the University of New Mexico School of law, this 
+open research project makes the accounting and data behind water-use analyses transparent and reproducible. All notebooks are executable—download the repo, install dependencies, and run the analyses yourself.
 
 ```{figure} logo.png
 :alt: Fleck–Berrens Lab logo

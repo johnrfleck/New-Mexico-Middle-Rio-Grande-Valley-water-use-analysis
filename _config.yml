@@ -1,8 +1,8 @@
 # Jupyter Book configuration (classic v1 / Sphinx-based schema)
 
 title: NM Middle Rio Grande Water Analysis
-author: John Fleck & Bob Berrens
-copyright: "2026, John Fleck and Bob Berrens"
+author: John Fleck & Robert P. Berrens
+copyright: "2026, John Fleck and Robert P. Berrens"
 logo: docs/logo.png
 
 execute:
