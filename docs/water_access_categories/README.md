@@ -1,5 +1,9 @@
 # Lot Size and Water Use by Water-Access Category — methodology
 
+Understanding where domestic wells are located, and how the consumptive use of water on residential parcels with a well relates to residential parcels solely dependent on municipal water, provides a useful tool for understanding trends in consumptive water use in the Middle Rio Grande Valley. While municipal water use is metered and overall trends are widely reported, domestic well water use is unmeasured, and has not played a significant role in Middle Rio Grande Valley water management discourse.
+
+Remote sensing tools, as gathered and freely provided by the OpenET project, allow us to begin assessing usage patterns across this otherwise unmeasured and unmonitored sector. While OpenET lacks the precision needed to measure water use at the scale of a single lot, careful application of the tool allows us to begin looking at relationships and trends of aggregate use across broad categories of similar residential parcels. The data suggest that  residential parcels with domestic wells tend to be substantially larger and substantially greener on average that those served solely by municipal supply.
+
 This note summarizes how the water-access-categories replication notebook
 (`notebooks/water_access_categories/water_access_categories_replication.ipynb`) classifies
 Bernalillo County residential parcels and compares them. The notebook is the source of truth;
