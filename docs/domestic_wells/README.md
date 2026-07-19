@@ -1,7 +1,26 @@
 # Domestic Wells — methodology
 
-This note summarizes how the domestic-wells replication notebook
-(`notebooks/domestic_wells/domestic_wells_replication.ipynb`) counts wells. The notebook is the
+Under New Mexico state statute, residents are permitted to drill a domestic well for household use
+with little regulatory oversight. The result in New Mexico's Middle Rio Grande Valley is a growing
+shift of water use away from more expensive, scarce, and tightly regulated water uses such as
+surface irrigation diversions and municipal supplies to domestic wells. Residents must apply for a
+permit to drill a well, but issuance is automatic, and there is no metering of the resulting
+diversion of water.
+
+While the New Mexico Office of State Engineer publishes a geospatial dataset identifying well
+permits and locations, many of the locations are only imprecisely known, making analysis of
+spatial patterns in well locations and therefore the resulting consumptive use of water
+challenging. Without metering, there is no way to ground truth the amount of water being
+withdrawn. Without precise location data, it also is difficult to know *where* the use is
+happening.
+
+Attempts to overcome those problems, in part by using remote sensing data, can nevertheless
+provide insights which, while lacking precision, are better than the current information vacuum
+that has left domestic wells outside the Middle Rio Grande Valley's current water management
+framework.
+
+This note summarizes how we have pursued this question in the domestic-wells replication notebook
+(`notebooks/domestic_wells/domestic_wells_replication.ipynb`) which provides our best conservative estimate of the number of wells located in key management jurisdictional areas. The notebook is the
 source of truth; this is a plain-language overview.
 
 ## Question
