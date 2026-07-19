@@ -55,6 +55,37 @@ All three metrics rise together: a roughly 8× spread in lot size, 2.6× in per-
 and a compounding ~22× spread in total water use per parcel from utility-only lots to lots with
 every water source.
 
+## Location limitations for the well flag
+
+The `HAS_WELL` classification depends entirely on whether an OSE well record has a location
+precise enough to place it inside a specific parcel. A meaningful share of records do not, and
+the gap is not evenly spread across the well population.
+
+Of the 9,406 active domestic wells inside the ABCWUA service area, **4,777 (50.8%) share a
+coordinate with ten or more other wells and carry no finer location than a roughly 10–160 acre
+PLSS legal-description cell** — a "stack." Because we cannot tell which specific parcel within
+that shared area actually holds each well, these are dropped from the well count entirely rather
+than guessed at.
+
+This gap tracks well age closely, not randomly:
+
+| | Wells finished before 1990 | Wells finished 1990 or later |
+|---|--:|--:|
+| Dropped (imprecise, shared location) | 68.0% | 1.2% |
+| Kept (well flag set) | 32.0% | 98.8% |
+
+This pattern — a sharp break right around 1990, with essentially no imprecisely-located wells
+after 2000 — looks like a change in OSE recordkeeping practice (routine capture of finer location
+detail beginning around 1990) rather than anything particular about older wells.
+
+**This means the category comparisons in this analysis are conservative in one specific,
+identifiable direction.** A dropped well can only cause a parcel to be *missed* from "ABCWUA +
+well" and counted as "ABCWUA only" instead — never the reverse, since the drop rule only removes
+wells from consideration, it never adds one. Some share of the parcels counted in "ABCWUA only"
+do have a well we simply could not confirm. That pulls this category's median lot size and water
+use *upward*, toward "ABCWUA + well" values — meaning the true gap between the two categories is,
+if anything, larger than the published figures show, not smaller.
+
 ## Method
 
 1. **Residential parcels.** All Bernalillo County residential parcels whose representative point falls
@@ -78,7 +109,9 @@ every water source.
   maps irrigation-serviceable land, not confirmed acequia shares or actual diversions.
 - **Category membership is a snapshot** (2021 ISOlog, current OSE POD vintage), not tracked
   through time.
-- **Domestic well presence is conservative** Lots are categorized as having domestic wells only if we have a clearly identified domestic well location in the POD database, based on changing Office of State Engineer data collection and recording practice. These are primarily wells drilled after 1990. This has the effect of understating the likely lot size and water use in ABCWUA-only parcels.
+- **Domestic well presence is conservative.** A well is only counted if its OSE record has a
+  precise-enough location — see "Location limitations for the well flag" above for the scope of
+  this undercount and why it biases the "ABCWUA only" category's numbers upward, not down.
 - **`median(A) × median(B) ≠ median(A × B)`.** The total-water-use chart uses each parcel's own
   true per-parcel ET total, not the lot-size median multiplied by the per-acre-ET median — those
   two quantities differ by up to ~10% in the middle categories because lot size and per-acre ET
