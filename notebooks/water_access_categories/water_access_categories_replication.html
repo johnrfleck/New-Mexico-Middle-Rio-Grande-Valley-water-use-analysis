@@ -1,0 +1,992 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Lot Size and Water Use by Water-Access Category — replication &#8212; NM Middle Rio Grande Water Analysis</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../../_static/documentation_options.js?v=c73c0f3e"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/water_access_categories/water_access_categories_replication';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Lot Size and Water Use by Water-Access Category — methodology" href="../../docs/water_access_categories/README.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../docs/index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="NM Middle Rio Grande Water Analysis - Home"/>
+    <img src="../../_static/logo.png" class="logo__image only-dark pst-js-only" alt="NM Middle Rio Grande Water Analysis - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../docs/domestic_wells/README.html">Domestic Wells Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../domestic_wells/domestic_wells_replication.html">Interactive Replication Notebook</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../docs/quadrant_map/README.html">Where Water Use Is Rising and Falling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quadrant_map/quadrant_map_replication.html">Interactive Replication Notebook</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../docs/water_access_categories/README.html">Lot Size and Water Use by Water-Access Category</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Interactive Replication Notebook</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/notebooks/water_access_categories/water_access_categories_replication.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Lot Size and Water Use by Water-Access Category — replication</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#method-summary">Method summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-google-earth-engine-account">Setup — Google Earth Engine account</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-fetch-bernalillo-county-residential-parcels-live-public-no-download">Step 1 — Fetch Bernalillo County residential parcels (live, public, no download)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-obtain-the-three-source-shapefiles">Step 2 — Obtain the three source shapefiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-classify-parcels-into-four-water-access-categories">Step 3 — Classify parcels into four water-access categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-per-parcel-2024-effective-et-google-earth-engine">Step 4 — Per-parcel 2024 effective ET (Google Earth Engine)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-three-summary-charts">Step 5 — Three summary charts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-to-the-published-figures">Compare to the published figures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-and-caveats">Notes and caveats</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="lot-size-and-water-use-by-water-access-category-replication">
+<h1>Lot Size and Water Use by Water-Access Category — replication<a class="headerlink" href="#lot-size-and-water-use-by-water-access-category-replication" title="Link to this heading">#</a></h1>
+<p>This notebook reproduces three companion charts comparing <strong>lot size</strong> and <strong>water use</strong> across
+Bernalillo County residential parcels inside the ABCWUA drinking-water service area, split into
+four categories by water access:</p>
+<ol class="arabic simple">
+<li><p><strong>ABCWUA only</strong> — utility water, no well, no ditch/acequia access</p></li>
+<li><p><strong>ABCWUA + well</strong> — utility water plus a domestic well</p></li>
+<li><p><strong>ABCWUA + ditch</strong> — utility water plus ditch (acequia/MRGCD) access</p></li>
+<li><p><strong>ABCWUA + well + ditch</strong> — all three</p></li>
+</ol>
+<p>All three metrics — median lot size, median effective ET per acre, and median total effective ET
+per parcel — rise together across these four categories, roughly an 8x, 2.6x, and compounding 22x
+spread respectively from utility-only lots to lots with every water source.</p>
+<p><strong>Published figures</strong> (<code class="docutils literal notranslate"><span class="pre">docs/water_access_categories/README.md</span></code>) — the versions presented in the
+accompanying talk. This notebook reproduces the same methodology; a fresh run will differ
+slightly if OSE POD, MRGCD ISOlog, or Bernalillo parcel data have been updated since the published
+vintage (see “Notes and caveats” at the end).</p>
+<section id="method-summary">
+<h2>Method summary<a class="headerlink" href="#method-summary" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Population:</strong> Bernalillo County residential parcels (assessor <code class="docutils literal notranslate"><span class="pre">PROPCLASS</span> <span class="pre">=</span> <span class="pre">'R'</span></code>) whose
+representative point falls inside the ABCWUA service-area boundary.</p></li>
+<li><p><strong>HAS_WELL:</strong> &gt;=1 active domestic-use OSE well (<code class="docutils literal notranslate"><span class="pre">DOM</span></code>/<code class="docutils literal notranslate"><span class="pre">DOL</span></code>/<code class="docutils literal notranslate"><span class="pre">PDM</span></code>/<code class="docutils literal notranslate"><span class="pre">DCN</span></code>, status <code class="docutils literal notranslate"><span class="pre">ACT</span></code>) inside the
+parcel; PLSS centroid-stack PODs dropped (same convention as the domestic-wells notebook).</p></li>
+<li><p><strong>HAS_ISOLOG (“ditch water”):</strong> &gt;=10% of parcel area overlaps the MRGCD 2021 ISOlog layer — a
+proxy for ditch/acequia access, not a literal water-right record.</p></li>
+<li><p><strong>Effective ET:</strong> OpenET ensemble evapotranspiration minus 0.7 x GRIDMET precipitation, 2024,
+summed over each parcel’s actual geometry via Google Earth Engine <code class="docutils literal notranslate"><span class="pre">reduceRegions</span></code> — a genuine
+per-parcel total.</p></li>
+<li><p><strong>Statistics:</strong> median lot size, median effective ET per acre, and median total effective ET per
+parcel, for each of the four categories.</p></li>
+</ul>
+</section>
+<section id="setup-google-earth-engine-account">
+<h2>Setup — Google Earth Engine account<a class="headerlink" href="#setup-google-earth-engine-account" title="Link to this heading">#</a></h2>
+<p>Like the quadrant-map notebook, this pulls per-parcel evapotranspiration directly from <strong>Google
+Earth Engine (GEE)</strong>. You’ll need your own (free) GEE account and a Google Cloud project with the
+Earth Engine API enabled:</p>
+<ol class="arabic simple">
+<li><p><strong>Sign up for Earth Engine</strong> (no cost for research/non-commercial use):
+<a class="reference external" href="https://earthengine.google.com/signup/">https://earthengine.google.com/signup/</a></p></li>
+<li><p><strong>Create a Google Cloud project</strong> and enable the Earth Engine API:
+<a class="reference external" href="https://console.cloud.google.com/">https://console.cloud.google.com/</a> -&gt; <em>APIs &amp; Services</em> -&gt; enable “Google Earth Engine API”.
+Or register the project directly at <a class="reference external" href="https://code.earthengine.google.com/register">https://code.earthengine.google.com/register</a>.</p></li>
+<li><p><strong>Install the Python client</strong> if needed: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">earthengine-api</span></code>.</p></li>
+<li><p><strong>Replace the placeholder below</strong> (<code class="docutils literal notranslate"><span class="pre">GEE_PROJECT</span></code>) with your own Google Cloud project ID.</p></li>
+<li><p>Run the next cell — <code class="docutils literal notranslate"><span class="pre">ee.Authenticate()</span></code> opens a browser login the first time only.</p></li>
+</ol>
+<p><strong>Requirements:</strong> <code class="docutils literal notranslate"><span class="pre">earthengine-api</span></code>, <code class="docutils literal notranslate"><span class="pre">geopandas</span></code>, <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">requests</span></code>, <code class="docutils literal notranslate"><span class="pre">shapely</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>
+(Python 3.10+).</p>
+<p><strong>Runtime note:</strong> Step 4 below (per-parcel effective ET) calls Earth Engine once per 500-parcel
+chunk across roughly 190,000 parcels — around 380 network round trips. This can take tens of
+minutes. The notebook prints progress as it goes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">ee</span>
+
+<span class="c1"># --- EDIT THIS: your own Google Cloud project ID with the Earth Engine API enabled ---</span>
+<span class="n">GEE_PROJECT</span> <span class="o">=</span> <span class="s2">&quot;your-gee-project-id&quot;</span>  <span class="c1"># &lt;-- replace with your project ID</span>
+
+<span class="n">ee</span><span class="o">.</span><span class="n">Authenticate</span><span class="p">()</span>  <span class="c1"># first run only: opens a browser login; cached afterward</span>
+<span class="n">ee</span><span class="o">.</span><span class="n">Initialize</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="n">GEE_PROJECT</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Earth Engine initialized with project:&quot;</span><span class="p">,</span> <span class="n">GEE_PROJECT</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-1-fetch-bernalillo-county-residential-parcels-live-public-no-download">
+<h2>Step 1 — Fetch Bernalillo County residential parcels (live, public, no download)<a class="headerlink" href="#step-1-fetch-bernalillo-county-residential-parcels-live-public-no-download" title="Link to this heading">#</a></h2>
+<p>Parcel geometry and the assessor’s residential classification come from the City of
+Albuquerque / Bernalillo County shared GIS (CABQ AGIS) public ArcGIS REST feature service. No
+account or download needed — the notebook pages through the service and keeps only residential
+(<code class="docutils literal notranslate"><span class="pre">PROPCLASS</span> <span class="pre">=</span> <span class="pre">'R'</span></code>) parcels.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="n">PARCELS_URL</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;https://services.arcgis.com/CWv1abTnC3urn4bV/arcgis/rest/services/&quot;</span>
+    <span class="s2">&quot;berncoparcels_forIDO/FeatureServer/0/query&quot;</span>
+<span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">fetch_residential_parcels</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Page through the CABQ AGIS parcel feature service, keeping PROPCLASS=&#39;R&#39; only.&quot;&quot;&quot;</span>
+    <span class="n">meta</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">PARCELS_URL</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;/query&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;f&quot;</span><span class="p">:</span> <span class="s2">&quot;json&quot;</span><span class="p">},</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="n">page_size</span> <span class="o">=</span> <span class="n">meta</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;maxRecordCount&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Service max page size: </span><span class="si">{</span><span class="n">page_size</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">features</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">offset</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">PARCELS_URL</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span>
+            <span class="s2">&quot;where&quot;</span><span class="p">:</span> <span class="s2">&quot;PROPCLASS=&#39;R&#39;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;outFields&quot;</span><span class="p">:</span> <span class="s2">&quot;UPC,PROPCLASS,VALCLASS,ACREAGE,SITUSADD&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;returnGeometry&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;resultOffset&quot;</span><span class="p">:</span> <span class="n">offset</span><span class="p">,</span>
+            <span class="s2">&quot;resultRecordCount&quot;</span><span class="p">:</span> <span class="n">page_size</span><span class="p">,</span>
+            <span class="s2">&quot;f&quot;</span><span class="p">:</span> <span class="s2">&quot;geojson&quot;</span><span class="p">,</span>
+        <span class="p">},</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">resp</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+        <span class="n">gj</span> <span class="o">=</span> <span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="n">batch</span> <span class="o">=</span> <span class="n">gj</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;features&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="n">features</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">batch</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  fetched </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">features</span><span class="p">)</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> parcels so far...&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">batch</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">page_size</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">offset</span> <span class="o">+=</span> <span class="n">page_size</span>
+
+    <span class="k">return</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="o">.</span><span class="n">from_features</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">crs</span><span class="o">=</span><span class="s2">&quot;EPSG:4326&quot;</span><span class="p">)</span>
+
+<span class="n">parcels</span> <span class="o">=</span> <span class="n">fetch_residential_parcels</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">residential parcels (Bernalillo): </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">parcels</span><span class="p">)</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-2-obtain-the-three-source-shapefiles">
+<h2>Step 2 — Obtain the three source shapefiles<a class="headerlink" href="#step-2-obtain-the-three-source-shapefiles" title="Link to this heading">#</a></h2>
+<p>Three shapefiles are needed and are <strong>not committed</strong> to this repository (see
+<code class="docutils literal notranslate"><span class="pre">data/water_access_categories/README.md</span></code> for full download/request instructions):</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Zip file</p></th>
+<th class="head"><p>Contents</p></th>
+<th class="head"><p>Source</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">OSE_PODs.zip</span></code></p></td>
+<td><p>OSE Points of Diversion</p></td>
+<td><p>Public — NM OSE geospatial open-data portal</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ABCWUAServiceArea.zip</span></code></p></td>
+<td><p>ABCWUA service-area boundary</p></td>
+<td><p>Public — NM OSE PWS boundaries</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MRGCD_ISOlog.zip</span></code></p></td>
+<td><p>MRGCD 2021 ISOlog (ditch-access proxy)</p></td>
+<td><p><strong>Obtained from MRGCD</strong> — request from <code class="docutils literal notranslate"><span class="pre">mapping&#64;mrgcd.us</span></code>, not on a public portal</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Place all three zips in <code class="docutils literal notranslate"><span class="pre">data/water_access_categories/input/source_shapefiles/</span></code> before running
+the next cell.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">zipfile</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">find_package_root</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">cur</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">start</span> <span class="ow">or</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">())</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="n">cur</span><span class="p">,</span> <span class="o">*</span><span class="n">cur</span><span class="o">.</span><span class="n">parents</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">/</span> <span class="s2">&quot;data&quot;</span> <span class="o">/</span> <span class="s2">&quot;water_access_categories&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">is_dir</span><span class="p">():</span>
+            <span class="k">return</span> <span class="n">p</span>
+    <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span>
+        <span class="s2">&quot;Could not find the package root (containing data/water_access_categories) above the notebook.&quot;</span><span class="p">)</span>
+
+<span class="n">PKG_ROOT</span> <span class="o">=</span> <span class="n">find_package_root</span><span class="p">()</span>
+<span class="n">WAC_DIR</span> <span class="o">=</span> <span class="n">PKG_ROOT</span> <span class="o">/</span> <span class="s2">&quot;data&quot;</span> <span class="o">/</span> <span class="s2">&quot;water_access_categories&quot;</span>
+<span class="n">SRC_ZIP_DIR</span> <span class="o">=</span> <span class="n">WAC_DIR</span> <span class="o">/</span> <span class="s2">&quot;input&quot;</span> <span class="o">/</span> <span class="s2">&quot;source_shapefiles&quot;</span>
+<span class="n">WORK_DIR</span> <span class="o">=</span> <span class="n">WAC_DIR</span> <span class="o">/</span> <span class="s2">&quot;input&quot;</span> <span class="o">/</span> <span class="s2">&quot;working_unzipped&quot;</span>
+<span class="n">WORK_DIR</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">ARCHIVES</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;OSE_PODs.zip&quot;</span><span class="p">:</span>            <span class="p">(</span><span class="s2">&quot;OSE_PODs&quot;</span><span class="p">,</span>            <span class="s2">&quot;Points_of_Diversion.shp&quot;</span><span class="p">),</span>
+    <span class="s2">&quot;ABCWUAServiceArea.zip&quot;</span><span class="p">:</span>   <span class="p">(</span><span class="s2">&quot;ABCWUAServiceArea&quot;</span><span class="p">,</span>   <span class="s2">&quot;ABCWUAServiceArea.shp&quot;</span><span class="p">),</span>
+    <span class="s2">&quot;MRGCD_ISOlog.zip&quot;</span><span class="p">:</span>        <span class="p">(</span><span class="s2">&quot;MRGCD_ISOlog&quot;</span><span class="p">,</span>        <span class="s2">&quot;MRGCDISOLogs2021.shp&quot;</span><span class="p">),</span>
+<span class="p">}</span>
+
+<span class="n">shp_paths</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">archive</span><span class="p">,</span> <span class="p">(</span><span class="n">subdir</span><span class="p">,</span> <span class="n">shp_name</span><span class="p">)</span> <span class="ow">in</span> <span class="n">ARCHIVES</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">zip_path</span> <span class="o">=</span> <span class="n">SRC_ZIP_DIR</span> <span class="o">/</span> <span class="n">archive</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">zip_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Missing source archive: </span><span class="si">{</span><span class="n">zip_path</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;See data/water_access_categories/README.md for where to obtain and place it.&quot;</span>
+        <span class="p">)</span>
+    <span class="n">out_dir</span> <span class="o">=</span> <span class="n">WORK_DIR</span> <span class="o">/</span> <span class="n">subdir</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">out_dir</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="k">with</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="n">zip_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">zf</span><span class="p">:</span>
+            <span class="n">zf</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">out_dir</span><span class="p">)</span>
+    <span class="n">shp_paths</span><span class="p">[</span><span class="n">archive</span><span class="p">]</span> <span class="o">=</span> <span class="n">out_dir</span> <span class="o">/</span> <span class="n">shp_name</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">archive</span><span class="si">}</span><span class="s2"> -&gt; </span><span class="si">{</span><span class="n">shp_paths</span><span class="p">[</span><span class="n">archive</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">POD_SHP</span> <span class="o">=</span> <span class="n">shp_paths</span><span class="p">[</span><span class="s2">&quot;OSE_PODs.zip&quot;</span><span class="p">]</span>
+<span class="n">ABCWUA_SHP</span> <span class="o">=</span> <span class="n">shp_paths</span><span class="p">[</span><span class="s2">&quot;ABCWUAServiceArea.zip&quot;</span><span class="p">]</span>
+<span class="n">ISOLOG_SHP</span> <span class="o">=</span> <span class="n">shp_paths</span><span class="p">[</span><span class="s2">&quot;MRGCD_ISOlog.zip&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-3-classify-parcels-into-four-water-access-categories">
+<h2>Step 3 — Classify parcels into four water-access categories<a class="headerlink" href="#step-3-classify-parcels-into-four-water-access-categories" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Reproject everything to UTM Zone 13N (EPSG:26913, meters) for area math.</p></li>
+<li><p>Keep parcels whose <strong>representative point</strong> falls inside the ABCWUA boundary.</p></li>
+<li><p><strong>HAS_WELL:</strong> join active domestic-use OSE wells (<code class="docutils literal notranslate"><span class="pre">DOM</span></code>/<code class="docutils literal notranslate"><span class="pre">DOL</span></code>/<code class="docutils literal notranslate"><span class="pre">PDM</span></code>/<code class="docutils literal notranslate"><span class="pre">DCN</span></code>, status <code class="docutils literal notranslate"><span class="pre">ACT</span></code>) to
+parcels; drop PLSS centroid-stack wells first (&gt;=10 wells sharing one rounded coordinate with
+no quarter-quarter section code) so an artifact of imprecise well locations doesn’t get counted
+as multiple distinct wells.</p></li>
+<li><p><strong>HAS_ISOLOG:</strong> compute the fraction of each parcel’s area that overlaps the MRGCD ISOlog
+layer; flag <code class="docutils literal notranslate"><span class="pre">True</span></code> where that fraction is &gt;= 10%.</p></li>
+<li><p>Combine both flags into the four-category label.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="n">UTM13</span> <span class="o">=</span> <span class="s2">&quot;EPSG:26913&quot;</span>
+<span class="n">ISO_FRAC_MIN</span> <span class="o">=</span> <span class="mf">0.10</span>
+<span class="n">STACK_THRESHOLD</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="n">parcels_utm</span> <span class="o">=</span> <span class="n">parcels</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">UTM13</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">parcels_utm</span><span class="p">[</span><span class="s2">&quot;pid&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">parcels_utm</span><span class="o">.</span><span class="n">index</span>
+
+<span class="n">abcwua</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">ABCWUA_SHP</span><span class="p">)</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">UTM13</span><span class="p">)</span>
+<span class="n">abcwua_u</span> <span class="o">=</span> <span class="n">abcwua</span><span class="o">.</span><span class="n">union_all</span><span class="p">()</span>
+<span class="n">rp</span> <span class="o">=</span> <span class="n">parcels_utm</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">representative_point</span><span class="p">()</span>
+<span class="n">inside</span> <span class="o">=</span> <span class="n">rp</span><span class="o">.</span><span class="n">within</span><span class="p">(</span><span class="n">abcwua_u</span><span class="p">)</span>
+<span class="n">sub</span> <span class="o">=</span> <span class="n">parcels_utm</span><span class="p">[</span><span class="n">inside</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;inside ABCWUA service area: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">sub</span><span class="p">)</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">parcels_utm</span><span class="p">)</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> residential parcels&quot;</span><span class="p">)</span>
+
+<span class="c1"># ---- well flag ----</span>
+<span class="n">pods</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">POD_SHP</span><span class="p">,</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;pod_status&quot;</span><span class="p">,</span> <span class="s2">&quot;use_&quot;</span><span class="p">,</span> <span class="s2">&quot;qtr_4th&quot;</span><span class="p">,</span> <span class="s2">&quot;pod_file&quot;</span><span class="p">],</span>
+    <span class="n">where</span><span class="o">=</span><span class="s2">&quot;pod_status=&#39;ACT&#39; AND use_ IN (&#39;DOM&#39;,&#39;DOL&#39;,&#39;PDM&#39;,&#39;DCN&#39;)&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">UTM13</span><span class="p">)</span>
+<span class="n">xy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">([</span><span class="n">pods</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">x</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">pods</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">)])</span>
+<span class="n">ck</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">tuple</span><span class="p">,</span> <span class="n">xy</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="n">pods</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="n">stk</span> <span class="o">=</span> <span class="n">ck</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">ck</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="n">qtr</span> <span class="o">=</span> <span class="n">pods</span><span class="p">[</span><span class="s2">&quot;qtr_4th&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;string&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">NA</span><span class="p">)</span>
+<span class="n">pods</span> <span class="o">=</span> <span class="n">pods</span><span class="p">[</span><span class="o">~</span><span class="p">(</span><span class="n">qtr</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">stk</span> <span class="o">&gt;=</span> <span class="n">STACK_THRESHOLD</span><span class="p">))]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="n">jw</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">pods</span><span class="p">,</span> <span class="n">sub</span><span class="p">[[</span><span class="s2">&quot;pid&quot;</span><span class="p">,</span> <span class="s2">&quot;geometry&quot;</span><span class="p">]],</span> <span class="n">predicate</span><span class="o">=</span><span class="s2">&quot;within&quot;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="p">)</span>
+<span class="n">well_ct</span> <span class="o">=</span> <span class="n">jw</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;pid&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
+<span class="n">sub</span><span class="p">[</span><span class="s2">&quot;WELL_N&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="s2">&quot;pid&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">well_ct</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">sub</span><span class="p">[</span><span class="s2">&quot;HAS_WELL&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="s2">&quot;WELL_N&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;parcels with a well: </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">sub</span><span class="p">[</span><span class="s1">&#39;HAS_WELL&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># ---- ISOlog (&quot;ditch water&quot;) overlap fraction ----</span>
+<span class="n">iso</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">ISOLOG_SHP</span><span class="p">)</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">UTM13</span><span class="p">)</span>
+<span class="n">sub</span><span class="p">[</span><span class="s2">&quot;parea&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">area</span>
+<span class="n">ov</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">overlay</span><span class="p">(</span><span class="n">sub</span><span class="p">[[</span><span class="s2">&quot;pid&quot;</span><span class="p">,</span> <span class="s2">&quot;parea&quot;</span><span class="p">,</span> <span class="s2">&quot;geometry&quot;</span><span class="p">]],</span> <span class="n">iso</span><span class="p">[[</span><span class="s2">&quot;geometry&quot;</span><span class="p">]],</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;intersection&quot;</span><span class="p">)</span>
+<span class="n">ov</span><span class="p">[</span><span class="s2">&quot;iarea&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ov</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">area</span>
+<span class="n">isofrac</span> <span class="o">=</span> <span class="n">ov</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;pid&quot;</span><span class="p">)[</span><span class="s2">&quot;iarea&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">sub</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;pid&quot;</span><span class="p">)[</span><span class="s2">&quot;parea&quot;</span><span class="p">]</span>
+<span class="n">sub</span><span class="p">[</span><span class="s2">&quot;ISO_FRAC&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="s2">&quot;pid&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">isofrac</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
+<span class="n">sub</span><span class="p">[</span><span class="s2">&quot;HAS_ISOLOG&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="s2">&quot;ISO_FRAC&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">ISO_FRAC_MIN</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;parcels with ditch (ISOlog) access: </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">sub</span><span class="p">[</span><span class="s1">&#39;HAS_ISOLOG&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># ---- categorize ----</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">categorize</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">HAS_WELL</span> <span class="ow">and</span> <span class="n">row</span><span class="o">.</span><span class="n">HAS_ISOLOG</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;4 ABCWUA+well+ISOlog&quot;</span>
+    <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">HAS_WELL</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;2 ABCWUA+well&quot;</span>
+    <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">HAS_ISOLOG</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;3 ABCWUA+ISOlog&quot;</span>
+    <span class="k">return</span> <span class="s2">&quot;1 ABCWUA only&quot;</span>
+
+<span class="n">sub</span><span class="p">[</span><span class="s2">&quot;CATEGORY&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">categorize</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">sub</span><span class="p">[</span><span class="s2">&quot;ACRES&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="s2">&quot;parea&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="mf">4046.856</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== category counts and lot size ===&quot;</span><span class="p">)</span>
+<span class="n">summary</span> <span class="o">=</span> <span class="n">sub</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;CATEGORY&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span>
+    <span class="n">n</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;pid&quot;</span><span class="p">,</span> <span class="s2">&quot;size&quot;</span><span class="p">),</span> <span class="n">median_acres</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;ACRES&quot;</span><span class="p">,</span> <span class="s2">&quot;median&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">summary</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">to_string</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-4-per-parcel-2024-effective-et-google-earth-engine">
+<h2>Step 4 — Per-parcel 2024 effective ET (Google Earth Engine)<a class="headerlink" href="#step-4-per-parcel-2024-effective-et-google-earth-engine" title="Link to this heading">#</a></h2>
+<p>For each classified parcel, sum 2024 effective ET (OpenET ensemble minus 0.7 x GRIDMET
+precipitation) over its actual geometry using Earth Engine’s <code class="docutils literal notranslate"><span class="pre">reduceRegions</span></code>, in 500-parcel
+chunks. This produces a genuine per-parcel total in acre-feet — not an approximation from a
+mean depth times area.</p>
+<p><strong>This is the slow step</strong> — expect tens of minutes for ~190,000 parcels.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">YEAR</span> <span class="o">=</span> <span class="mi">2024</span>
+<span class="n">M3_AF</span> <span class="o">=</span> <span class="mf">0.000810713194</span>
+<span class="n">CHUNK</span> <span class="o">=</span> <span class="mi">500</span>
+
+<span class="n">et_collection</span> <span class="o">=</span> <span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">(</span><span class="s2">&quot;OpenET/ENSEMBLE/CONUS/GRIDMET/MONTHLY/v2_0&quot;</span><span class="p">)</span>
+                  <span class="o">.</span><span class="n">filterDate</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">YEAR</span><span class="si">}</span><span class="s2">-01-01&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">YEAR</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">-01-01&quot;</span><span class="p">))</span>
+<span class="n">precip_annual_07</span> <span class="o">=</span> <span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">(</span><span class="s2">&quot;IDAHO_EPSCOR/GRIDMET&quot;</span><span class="p">)</span>
+                    <span class="o">.</span><span class="n">filterDate</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">YEAR</span><span class="si">}</span><span class="s2">-01-01&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">YEAR</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">-01-01&quot;</span><span class="p">)</span>
+                    <span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;pr&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mf">0.7</span><span class="p">))</span>
+
+<span class="n">effective_et_volume</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">et_collection</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;et_ensemble_mad&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">precip_annual_07</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">pixelArea</span><span class="p">())</span>
+    <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;eff_et_m3&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">sub_wgs84</span> <span class="o">=</span> <span class="n">sub</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="s2">&quot;EPSG:4326&quot;</span><span class="p">)</span>
+<span class="n">records</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">sub_wgs84</span><span class="p">),</span> <span class="n">CHUNK</span><span class="p">):</span>
+    <span class="n">part</span> <span class="o">=</span> <span class="n">sub_wgs84</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="n">CHUNK</span><span class="p">]</span>
+    <span class="n">feats</span> <span class="o">=</span> <span class="p">[</span><span class="n">ee</span><span class="o">.</span><span class="n">Feature</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Geometry</span><span class="p">(</span><span class="n">geom</span><span class="o">.</span><span class="n">__geo_interface__</span><span class="p">),</span> <span class="p">{</span><span class="s2">&quot;pid&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">pid</span><span class="p">)})</span>
+              <span class="k">for</span> <span class="n">pid</span><span class="p">,</span> <span class="n">geom</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">part</span><span class="p">[</span><span class="s2">&quot;pid&quot;</span><span class="p">],</span> <span class="n">part</span><span class="o">.</span><span class="n">geometry</span><span class="p">)]</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">effective_et_volume</span><span class="o">.</span><span class="n">reduceRegions</span><span class="p">(</span>
+        <span class="n">collection</span><span class="o">=</span><span class="n">ee</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="n">feats</span><span class="p">),</span> <span class="n">reducer</span><span class="o">=</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span>
+        <span class="n">scale</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">tileScale</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">getInfo</span><span class="p">()[</span><span class="s2">&quot;features&quot;</span><span class="p">]:</span>
+        <span class="n">props</span> <span class="o">=</span> <span class="n">f</span><span class="p">[</span><span class="s2">&quot;properties&quot;</span><span class="p">]</span>
+        <span class="n">records</span><span class="p">[</span><span class="n">props</span><span class="p">[</span><span class="s2">&quot;pid&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;eff_et_m3&quot;</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  ET </span><span class="si">{</span><span class="nb">min</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">CHUNK</span><span class="p">,</span><span class="w"> </span><span class="nb">len</span><span class="p">(</span><span class="n">sub_wgs84</span><span class="p">))</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">sub_wgs84</span><span class="p">)</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">et_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">records</span><span class="o">.</span><span class="n">items</span><span class="p">()),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;pid&quot;</span><span class="p">,</span> <span class="s2">&quot;eff_et_m3&quot;</span><span class="p">])</span>
+<span class="n">sub</span> <span class="o">=</span> <span class="n">sub</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">et_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">&quot;pid&quot;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+<span class="n">sub</span><span class="p">[</span><span class="s2">&quot;eff_et_m3&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="s2">&quot;eff_et_m3&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
+<span class="n">sub</span><span class="p">[</span><span class="s2">&quot;Q_MID_AF&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="s2">&quot;eff_et_m3&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">M3_AF</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">total 2024 effective ET: </span><span class="si">{</span><span class="n">sub</span><span class="p">[</span><span class="s1">&#39;Q_MID_AF&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">:</span><span class="s2">,.0f</span><span class="si">}</span><span class="s2"> acre-feet&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-5-three-summary-charts">
+<h2>Step 5 — Three summary charts<a class="headerlink" href="#step-5-three-summary-charts" title="Link to this heading">#</a></h2>
+<p>Same four categories throughout: median lot size, median effective ET per acre (normalizes out
+lot-size differences), and median total effective ET per parcel (the actual volume on the median
+parcel — see the caveat below on why this isn’t simply the other two medians multiplied
+together).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.image</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpimage</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.font_manager</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">fm</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.ticker</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mticker</span>
+
+<span class="n">CAT_ORDER</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;1 ABCWUA only&quot;</span><span class="p">,</span> <span class="s2">&quot;2 ABCWUA+well&quot;</span><span class="p">,</span> <span class="s2">&quot;3 ABCWUA+ISOlog&quot;</span><span class="p">,</span> <span class="s2">&quot;4 ABCWUA+well+ISOlog&quot;</span><span class="p">]</span>
+<span class="n">X_LABELS</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;ABCWUA</span><span class="se">\n</span><span class="s2">only&quot;</span><span class="p">,</span> <span class="s2">&quot;ABCWUA</span><span class="se">\n</span><span class="s2">+ well&quot;</span><span class="p">,</span> <span class="s2">&quot;ABCWUA</span><span class="se">\n</span><span class="s2">+ ditch&quot;</span><span class="p">,</span> <span class="s2">&quot;ABCWUA + well</span><span class="se">\n</span><span class="s2">+ ditch&quot;</span><span class="p">]</span>
+<span class="n">SLATE</span> <span class="o">=</span> <span class="s2">&quot;#0f172a&quot;</span>
+<span class="n">GREY</span> <span class="o">=</span> <span class="s2">&quot;#5a5a5a&quot;</span>
+<span class="n">BAR_COLORS</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;#94a3b8&quot;</span><span class="p">,</span> <span class="s2">&quot;#5eead4&quot;</span><span class="p">,</span> <span class="s2">&quot;#0f766e&quot;</span><span class="p">,</span> <span class="s2">&quot;#0f172a&quot;</span><span class="p">]</span>
+<span class="n">PALE_GREY</span> <span class="o">=</span> <span class="s2">&quot;#E8E8E8&quot;</span>
+<span class="n">FONT</span> <span class="o">=</span> <span class="s2">&quot;Helvetica&quot;</span> <span class="k">if</span> <span class="s2">&quot;Helvetica&quot;</span> <span class="ow">in</span> <span class="p">{</span><span class="n">f</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">fm</span><span class="o">.</span><span class="n">fontManager</span><span class="o">.</span><span class="n">ttflist</span><span class="p">}</span> <span class="k">else</span> <span class="s2">&quot;Arial&quot;</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;font.family&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">FONT</span>
+
+<span class="n">sub</span><span class="p">[</span><span class="s2">&quot;ET_AF_AC&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="s2">&quot;Q_MID_AF&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">sub</span><span class="p">[</span><span class="s2">&quot;ACRES&quot;</span><span class="p">]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">category_bar_chart</span><span class="p">(</span><span class="n">value_col</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">subtitle</span><span class="p">,</span> <span class="n">ylabel</span><span class="p">,</span> <span class="n">value_fmt</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">out_name</span><span class="p">):</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="n">sub</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;CATEGORY&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;pid&quot;</span><span class="p">,</span> <span class="s2">&quot;size&quot;</span><span class="p">),</span> <span class="n">value</span><span class="o">=</span><span class="p">(</span><span class="n">value_col</span><span class="p">,</span> <span class="s2">&quot;median&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">CAT_ORDER</span><span class="p">)</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="s2">&quot;n&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">10.5</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mf">0.09</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mf">0.97</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mf">0.82</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mf">0.14</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">CAT_ORDER</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">BAR_COLORS</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.62</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">counts</span><span class="p">)):</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="o">+</span> <span class="n">ymax</span> <span class="o">*</span> <span class="mf">0.012</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">value_fmt</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">(n=</span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span>
+                <span class="n">fontsize</span><span class="o">=</span><span class="mf">12.5</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">SLATE</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">linespacing</span><span class="o">=</span><span class="mf">1.25</span><span class="p">)</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.935</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">SLATE</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.883</span><span class="p">,</span> <span class="n">subtitle</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">GREY</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">ylabel</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">SLATE</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">X_LABELS</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">12.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">SLATE</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">ymax</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">colors</span><span class="o">=</span><span class="n">SLATE</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">PALE_GREY</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_axisbelow</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">spine</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="s2">&quot;right&quot;</span><span class="p">]:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="n">spine</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">spine</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;left&quot;</span><span class="p">,</span> <span class="s2">&quot;bottom&quot;</span><span class="p">]:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="n">spine</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">SLATE</span><span class="p">)</span>
+
+    <span class="n">logo_path</span> <span class="o">=</span> <span class="n">PKG_ROOT</span> <span class="o">/</span> <span class="s2">&quot;docs&quot;</span> <span class="o">/</span> <span class="s2">&quot;logo.png&quot;</span>
+    <span class="k">if</span> <span class="n">logo_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="n">logo</span> <span class="o">=</span> <span class="n">mpimage</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">logo_path</span><span class="p">)</span>
+        <span class="n">logo_h</span> <span class="o">=</span> <span class="mf">0.052</span>
+        <span class="n">logo_w</span> <span class="o">=</span> <span class="n">logo_h</span> <span class="o">*</span> <span class="p">(</span><span class="n">logo</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">logo</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="mi">7</span> <span class="o">/</span> <span class="mf">10.5</span><span class="p">)</span>
+        <span class="n">lax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="mf">0.075</span><span class="p">,</span> <span class="mf">0.015</span><span class="p">,</span> <span class="n">logo_w</span><span class="p">,</span> <span class="n">logo_h</span><span class="p">],</span> <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;SW&quot;</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">lax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">logo</span><span class="p">);</span> <span class="n">lax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.97</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">,</span> <span class="s2">&quot;Data: Bernalillo County Assessor, OSE POD, OSE ABCWUA boundary, &quot;</span>
+             <span class="s2">&quot;MRGCD ISOlog, OpenET, GRIDMET&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">8.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">GREY</span><span class="p">)</span>
+
+    <span class="n">out_path</span> <span class="o">=</span> <span class="n">OUT_DIR</span> <span class="o">/</span> <span class="n">out_name</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">out_path</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Wrote </span><span class="si">{</span><span class="n">out_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">lbl</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">CAT_ORDER</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">counts</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">lbl</span><span class="si">:</span><span class="s2">24s</span><span class="si">}</span><span class="s2"> n=</span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">&gt;7,</span><span class="si">}</span><span class="s2">  median=</span><span class="si">{</span><span class="n">value_fmt</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">OUT_DIR</span> <span class="o">=</span> <span class="n">WAC_DIR</span> <span class="o">/</span> <span class="s2">&quot;output&quot;</span>
+<span class="n">OUT_DIR</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">category_bar_chart</span><span class="p">(</span><span class="s2">&quot;ACRES&quot;</span><span class="p">,</span> <span class="s2">&quot;Lot Size by Water Access, ABCWUA Service Area&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Median parcel size, Bernalillo County residential parcels&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Median lot size (acres)&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">{:.2f}</span><span class="s2"> ac&quot;</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="s2">&quot;lot_size_by_category.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">category_bar_chart</span><span class="p">(</span><span class="s2">&quot;ET_AF_AC&quot;</span><span class="p">,</span> <span class="s2">&quot;Effective ET by Water Access, ABCWUA Service Area&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Median effective ET, Bernalillo County residential parcels, 2024&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Median effective ET (acre-feet per acre / year)&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">{:.2f}</span><span class="s2"> AF/ac&quot;</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span>
+    <span class="s2">&quot;effective_et_by_category.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">category_bar_chart</span><span class="p">(</span><span class="s2">&quot;Q_MID_AF&quot;</span><span class="p">,</span> <span class="s2">&quot;Total Water Use by Water Access, ABCWUA Service Area&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Median total effective ET per parcel, Bernalillo County residential parcels, 2024&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Median total effective ET (acre-feet/year)&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">{:.2f}</span><span class="s2"> AF/yr&quot;</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span>
+    <span class="s2">&quot;total_water_use_by_category.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="compare-to-the-published-figures">
+<h2>Compare to the published figures<a class="headerlink" href="#compare-to-the-published-figures" title="Link to this heading">#</a></h2>
+<p>The published talk figures are included in this repository at
+<code class="docutils literal notranslate"><span class="pre">docs/water_access_categories/lot_size_by_category_full_abcwua.png</span></code>,
+<code class="docutils literal notranslate"><span class="pre">docs/water_access_categories/effective_et_by_category_full_abcwua.png</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">docs/water_access_categories/total_water_use_by_category_full_abcwua.png</span></code> for direct comparison.</p>
+</section>
+<section id="notes-and-caveats">
+<h2>Notes and caveats<a class="headerlink" href="#notes-and-caveats" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>“Ditch water” = ISOlog overlap, not a literal water-right record.</strong> The MRGCD ISOlog layer
+maps irrigation-serviceable land, not confirmed acequia shares or actual diversions.</p></li>
+<li><p><strong>Category membership is a snapshot</strong> (2021 ISOlog, current OSE POD vintage) — a parcel that
+had a well drilled since, or whose ditch access changed, is classified by current-data state.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">median(A)</span> <span class="pre">x</span> <span class="pre">median(B)</span></code> does not equal <code class="docutils literal notranslate"><span class="pre">median(A</span> <span class="pre">x</span> <span class="pre">B)</span></code>.</strong> The total-water-use chart uses each
+parcel’s own true per-parcel effective-ET total (from Earth Engine), not the lot-size median
+multiplied by the per-acre-ET median — those two quantities can differ by up to roughly 10% in
+the middle categories because lot size and per-acre ET intensity aren’t perfectly correlated
+across parcels. Category 3 (ditch access, no well) showed the largest gap in the published run:
+the largest ditch-adjacent parcels tend to run somewhat lower per-acre ET than smaller ones,
+plausibly reflecting more fallow/pasture land diluting the average.</p></li>
+<li><p><strong>Parcel-scale resolution.</strong> Most residential lots here (median 0.16-1.3 acres) are one or two
+OpenET/Landsat pixels (~30 m) or smaller, so an individual parcel’s ET value carries real
+pixel-mixing noise. The category-level medians (thousands of parcels per bar, except category
+4’s few hundred) are far more robust than any single parcel’s number.</p></li>
+<li><p><strong>The ABCWUA boundary is provisional</strong> — the OSE Public Water System polygon used here and
+ABCWUA’s own service-zone map disagree by roughly 1,200 domestic rights. See
+<code class="docutils literal notranslate"><span class="pre">data/domestic_wells/README.md</span></code> for the same open boundary question.</p></li>
+<li><p><strong>The 0.7x effective-precipitation coefficient</strong> follows the FAO rule-of-thumb effective-rainfall
+fraction for arid regions (Allen et al., 1998; Brouwer &amp; Heibloem, 1986) — see
+<code class="docutils literal notranslate"><span class="pre">docs/quadrant_map/README.md</span></code> for the full citation and caveats. Not a locally-calibrated
+physical constant.</p></li>
+<li><p><strong>2024 cross-section only</strong> — this is a snapshot, not a claim about how these categories are
+changing over time.</p></li>
+<li><p><strong>Residential parcels only</strong> (assessor <code class="docutils literal notranslate"><span class="pre">PROPCLASS</span> <span class="pre">=</span> <span class="pre">'R'</span></code>) — commercial, vacant, and other
+non-residential parcel classes are excluded from all four categories.</p></li>
+<li><p><strong>A fresh run will not exactly match the published figures</strong> — OSE POD is updated monthly,
+Bernalillo County parcel data is served live and may have changed, and the MRGCD ISOlog vintage
+you obtain may differ from the 2021 layer used in the published run.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks/water_access_categories"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../docs/water_access_categories/README.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Lot Size and Water Use by Water-Access Category — methodology</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#method-summary">Method summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-google-earth-engine-account">Setup — Google Earth Engine account</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-fetch-bernalillo-county-residential-parcels-live-public-no-download">Step 1 — Fetch Bernalillo County residential parcels (live, public, no download)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-obtain-the-three-source-shapefiles">Step 2 — Obtain the three source shapefiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-classify-parcels-into-four-water-access-categories">Step 3 — Classify parcels into four water-access categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-per-parcel-2024-effective-et-google-earth-engine">Step 4 — Per-parcel 2024 effective ET (Google Earth Engine)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-three-summary-charts">Step 5 — Three summary charts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-to-the-published-figures">Compare to the published figures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-and-caveats">Notes and caveats</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By John Fleck & Robert P. Berrens
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026, John Fleck and Robert P. Berrens.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p><a href="https://fleck-berrens.org" target="_blank">Fleck–Berrens Lab</a></p>
+<p>Code licensed
+<a href="https://github.com/johnrfleck/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis/blob/main/LICENSE">MIT</a>.
+Written content and figures licensed
+<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

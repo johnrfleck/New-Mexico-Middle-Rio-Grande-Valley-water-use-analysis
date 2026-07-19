@@ -1,0 +1,836 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>01: Measuring the net reduction of the river’s flow on New Mexico’s Middle Rio Grande &#8212; NM Middle Rio Grande Water Analysis</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../../_static/documentation_options.js?v=c73c0f3e"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/nfr/01_define_nfr_and_build_series';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../docs/index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="NM Middle Rio Grande Water Analysis - Home"/>
+    <img src="../../_static/logo.png" class="logo__image only-dark pst-js-only" alt="NM Middle Rio Grande Water Analysis - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../docs/domestic_wells/README.html">Domestic Wells Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../domestic_wells/domestic_wells_replication.html">Interactive Replication Notebook</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../docs/quadrant_map/README.html">Where Water Use Is Rising and Falling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quadrant_map/quadrant_map_replication.html">Interactive Replication Notebook</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../docs/water_access_categories/README.html">Lot Size and Water Use by Water-Access Category</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../water_access_categories/water_access_categories_replication.html">Interactive Replication Notebook</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/notebooks/nfr/01_define_nfr_and_build_series.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>01: Measuring the net reduction of the river’s flow on New Mexico’s Middle Rio Grande</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-goal">Project Goal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-reproducible-public-record">Building a Reproducible Public Record</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-gages">The Gages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-completeness-screen">The Completeness Screen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conversion-to-annual-water-volume">Conversion to Annual Water Volume</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-results">The Results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="measuring-the-net-reduction-of-the-river-s-flow-on-new-mexico-s-middle-rio-grande">
+<h1>01: Measuring the net reduction of the river’s flow on New Mexico’s Middle Rio Grande<a class="headerlink" href="#measuring-the-net-reduction-of-the-river-s-flow-on-new-mexico-s-middle-rio-grande" title="Link to this heading">#</a></h1>
+<section id="project-goal">
+<h2>Project Goal<a class="headerlink" href="#project-goal" title="Link to this heading">#</a></h2>
+<p>The objective: to develop tools to analyze in detail the way the coupled human-natural system along New Mexico’s Middle Rio Grande from Cochiti to San Marcial consumes water, and how patterns of consumption have changed over time.</p>
+<p>The basic premise of this approach is something we call Net Flow Reduction (<strong>NFR</strong>): the difference between the amount of water that flows into the valley at Otowi and how much flows out at San Marcial. The simple mass balance difference is not a direct measure of consumptive use of water because of the complex interplay between inflows and outflows along the way. But it gives us a starting point to identify in greater detail the various factors - human, natural ecosystem, weather, and climate - that influence changes in net flow over time.</p>
+<p>This has the potential to provide a valuable tool to inform decisions about the Middle Rio Grande’s water use under the terms of the Rio Grande Compact, which creates a legal obligation to downstream users in southern New Mexico, Texas, and Mexico.</p>
+<p>Analysis design and interpretation by John Fleck; code drafted with assistance from OpenAI Codex.</p>
+<section id="building-a-reproducible-public-record">
+<h3>Building a Reproducible Public Record<a class="headerlink" href="#building-a-reproducible-public-record" title="Link to this heading">#</a></h3>
+<p>The analysis that follows uses the R programming language and the USGS <em>dataRetrieval</em> package to download daily streamflow values from the modern USGS Water Data API for the gages of interest for their entire available periods of record. The streamflow values are returned as a rate - cubic feet per second. The code converts them to a volume - acre-feet flowing past the gage of interest each day.</p>
+<p>Because the returned data is not always complete, the code applies a completeness screen to enable later decisions about the quality of the data to be used for subsequent analysis and write a table of the resulting data to be used for later steps in the analytical process.</p>
+<p>Required R packages: <code class="docutils literal notranslate"><span class="pre">dataRetrieval</span></code>, <code class="docutils literal notranslate"><span class="pre">dplyr</span></code>, <code class="docutils literal notranslate"><span class="pre">tidyr</span></code>, <code class="docutils literal notranslate"><span class="pre">readr</span></code>, <code class="docutils literal notranslate"><span class="pre">ggplot2</span></code>, and <code class="docutils literal notranslate"><span class="pre">scales</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">dataRetrieval</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">tidyr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">readr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">scales</span><span class="p">)</span>
+
+<span class="c1"># Find the public package root from either the notebook folder or the repository root.</span>
+<span class="n">find_project_root</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="n">start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getwd</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">current</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">normalizePath</span><span class="p">(</span><span class="n">start</span><span class="p">,</span><span class="w"> </span><span class="n">mustWork</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+
+<span class="w">  </span><span class="kr">repeat</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="nf">dir.exists</span><span class="p">(</span><span class="nf">file.path</span><span class="p">(</span><span class="n">current</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;data&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;nfr&quot;</span><span class="p">)))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kr">return</span><span class="p">(</span><span class="n">current</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">parent</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">dirname</span><span class="p">(</span><span class="n">current</span><span class="p">)</span>
+<span class="w">    </span><span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="nf">identical</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span><span class="w"> </span><span class="n">current</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nf">stop</span><span class="p">(</span><span class="s">&quot;Could not find public package root containing &#39;data/nfr&#39;.&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">call.</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">current</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">parent</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">project_root</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">find_project_root</span><span class="p">()</span>
+<span class="n">output_path</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">file.path</span><span class="p">(</span><span class="n">project_root</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;data&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;nfr&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;net_flow_reduction_annual_flows_af.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># USGS parameter 00060 is discharge in cubic feet per second.</span>
+<span class="c1"># Statistic 00003 identifies the daily mean value.</span>
+<span class="n">parameter_code</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;00060&quot;</span>
+<span class="n">statistic_id</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;00003&quot;</span>
+<span class="n">query_start</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;1900-01-01&quot;</span>
+<span class="n">final_analysis_year</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">2025</span>
+<span class="n">query_end</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">paste0</span><span class="p">(</span><span class="n">final_analysis_year</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-12-31&quot;</span><span class="p">)</span>
+<span class="n">completeness_threshold</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">95</span>
+<span class="n">acre_feet_per_cfs_day</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">86400</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">43560</span>
+
+<span class="nf">cat</span><span class="p">(</span><span class="s">&quot;Project root:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">basename</span><span class="p">(</span><span class="n">project_root</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span>
+<span class="nf">cat</span><span class="p">(</span><span class="s">&quot;Output table:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">file.path</span><span class="p">(</span><span class="s">&quot;data&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;nfr&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">basename</span><span class="p">(</span><span class="n">output_path</span><span class="p">)),</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="the-gages">
+<h2>The Gages<a class="headerlink" href="#the-gages" title="Link to this heading">#</a></h2>
+<p>The analysis uses three gages - one at the upstream end of the Middle Rio Grande Valley and two at the downstream end.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">08313000</span></code>: inflow Rio Grande at Otowi Bridge</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">08358400</span></code>: outflow through the Rio Grande Floodway at San Marcial</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">08358300</span></code>: outflow through the Low Flow Conveyance Channel at San Marcial, adjacent to the main river channel</p></li>
+</ul>
+<p>Total outflow is calculated by summing the Rio Grande Floodway and LFCC.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the gages and the role each one plays in the accounting measure.</span>
+<span class="n">sites</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">data.frame</span><span class="p">(</span>
+<span class="w">  </span><span class="n">site_no</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;08313000&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;08358400&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;08358300&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">short_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;Otowi&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;San Marcial Floodway&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;San Marcial Conveyance&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">role</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;inflow&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;outflow_main_channel&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;outflow_lfcc&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">site_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span>
+<span class="w">    </span><span class="s">&quot;Rio Grande at Otowi Bridge, near San Ildefonso, NM&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s">&quot;Rio Grande Floodway at San Marcial, NM&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s">&quot;Rio Grande Conveyance Channel at San Marcial, NM&quot;</span>
+<span class="w">  </span><span class="p">),</span>
+<span class="w">  </span><span class="n">stringsAsFactors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span>
+<span class="p">)</span>
+
+<span class="n">fetch_daily_values</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="n">site_row</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1"># read_waterdata_daily uses modern USGS monitoring-location IDs.</span>
+<span class="w">  </span><span class="n">monitoring_location_id</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;USGS-&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">site_row</span><span class="p">[[</span><span class="s">&quot;site_no&quot;</span><span class="p">]])</span>
+
+<span class="w">  </span><span class="n">raw</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read_waterdata_daily</span><span class="p">(</span>
+<span class="w">    </span><span class="n">monitoring_location_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">monitoring_location_id</span><span class="p">,</span>
+<span class="w">    </span><span class="n">parameter_code</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parameter_code</span><span class="p">,</span>
+<span class="w">    </span><span class="n">statistic_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">statistic_id</span><span class="p">,</span>
+<span class="w">    </span><span class="n">time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">query_start</span><span class="p">,</span><span class="w"> </span><span class="n">query_end</span><span class="p">),</span>
+<span class="w">    </span><span class="n">properties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;monitoring_location_id&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;time&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;value&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;qualifier&quot;</span><span class="p">),</span>
+<span class="w">    </span><span class="n">skipGeometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span>
+<span class="w">  </span><span class="p">)</span>
+
+<span class="w">  </span><span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="nf">nrow</span><span class="p">(</span><span class="n">raw</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kr">return</span><span class="p">(</span><span class="nf">data.frame</span><span class="p">(</span>
+<span class="w">      </span><span class="n">site_no</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">character</span><span class="p">(),</span>
+<span class="w">      </span><span class="n">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.Date</span><span class="p">(</span><span class="nf">character</span><span class="p">()),</span>
+<span class="w">      </span><span class="n">discharge_cfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">numeric</span><span class="p">(),</span>
+<span class="w">      </span><span class="n">qualifiers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">character</span><span class="p">(),</span>
+<span class="w">      </span><span class="n">stringsAsFactors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span>
+<span class="w">    </span><span class="p">))</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">daily</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">data.frame</span><span class="p">(</span>
+<span class="w">    </span><span class="n">site_no</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">sub</span><span class="p">(</span><span class="s">&quot;^USGS-&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">raw</span><span class="o">$</span><span class="n">monitoring_location_id</span><span class="p">),</span>
+<span class="w">    </span><span class="n">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.Date</span><span class="p">(</span><span class="n">raw</span><span class="o">$</span><span class="n">time</span><span class="p">),</span>
+<span class="w">    </span><span class="n">discharge_cfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">raw</span><span class="o">$</span><span class="n">value</span><span class="p">),</span>
+<span class="w">    </span><span class="n">qualifiers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;qualifier&quot;</span><span class="w"> </span><span class="o">%in%</span><span class="w"> </span><span class="nf">names</span><span class="p">(</span><span class="n">raw</span><span class="p">))</span><span class="w"> </span><span class="nf">as.character</span><span class="p">(</span><span class="n">raw</span><span class="o">$</span><span class="n">qualifier</span><span class="p">)</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="kc">NA_character_</span><span class="p">,</span>
+<span class="w">    </span><span class="n">stringsAsFactors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span>
+<span class="w">  </span><span class="p">)</span>
+
+<span class="w">  </span><span class="c1"># Attach readable site metadata to every daily row.</span>
+<span class="w">  </span><span class="n">daily</span><span class="o">$</span><span class="n">short_name</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">site_row</span><span class="p">[[</span><span class="s">&quot;short_name&quot;</span><span class="p">]]</span>
+<span class="w">  </span><span class="n">daily</span><span class="o">$</span><span class="n">role</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">site_row</span><span class="p">[[</span><span class="s">&quot;role&quot;</span><span class="p">]]</span>
+<span class="w">  </span><span class="n">daily</span><span class="o">$</span><span class="n">site_name</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">site_row</span><span class="p">[[</span><span class="s">&quot;site_name&quot;</span><span class="p">]]</span>
+<span class="w">  </span><span class="n">daily</span>
+<span class="p">}</span>
+
+<span class="c1"># Download and combine the daily records for all three gages.</span>
+<span class="n">daily_list</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">lapply</span><span class="p">(</span><span class="nf">seq_len</span><span class="p">(</span><span class="nf">nrow</span><span class="p">(</span><span class="n">sites</span><span class="p">)),</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="nf">fetch_daily_values</span><span class="p">(</span><span class="n">sites</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="p">]))</span>
+<span class="n">daily</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">bind_rows</span><span class="p">(</span><span class="n">daily_list</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">arrange</span><span class="p">(</span><span class="n">site_no</span><span class="p">,</span><span class="w"> </span><span class="n">date</span><span class="p">)</span>
+
+<span class="nf">cat</span><span class="p">(</span><span class="s">&quot;Downloaded&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">comma</span><span class="p">(</span><span class="nf">nrow</span><span class="p">(</span><span class="n">daily</span><span class="p">)),</span><span class="w"> </span><span class="s">&quot;daily rows across&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">nrow</span><span class="p">(</span><span class="n">sites</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;gages.\n&quot;</span><span class="p">)</span>
+<span class="n">sites</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="the-completeness-screen">
+<h2>The Completeness Screen<a class="headerlink" href="#the-completeness-screen" title="Link to this heading">#</a></h2>
+<p>To ensure consistency in the upstream and downstream calculations, we develop a completeness screen: how many days in each calendar year have data from all three gages?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Summarize the date span and non-missing daily values for each gage.</span>
+<span class="n">site_summary</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">daily</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">group_by</span><span class="p">(</span><span class="n">site_no</span><span class="p">,</span><span class="w"> </span><span class="n">short_name</span><span class="p">,</span><span class="w"> </span><span class="n">role</span><span class="p">,</span><span class="w"> </span><span class="n">site_name</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">summarize</span><span class="p">(</span>
+<span class="w">    </span><span class="n">first_date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">min</span><span class="p">(</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">),</span>
+<span class="w">    </span><span class="n">last_date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">max</span><span class="p">(</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">),</span>
+<span class="w">    </span><span class="n">non_missing_days</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">discharge_cfs</span><span class="p">)),</span>
+<span class="w">    </span><span class="n">total_rows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">n</span><span class="p">(),</span>
+<span class="w">    </span><span class="n">.groups</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;drop&quot;</span>
+<span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">mutate</span><span class="p">(</span>
+<span class="w">    </span><span class="n">span_days</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.integer</span><span class="p">(</span><span class="n">last_date</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">first_date</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">,</span>
+<span class="w">    </span><span class="n">pct_complete_within_span</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">round</span><span class="p">(</span><span class="m">100</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">non_missing_days</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">span_days</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">)</span>
+<span class="w">  </span><span class="p">)</span>
+
+<span class="c1"># Put the three gages side by side so daily joint completeness can be tested.</span>
+<span class="n">wide_daily</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">daily</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">select</span><span class="p">(</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="n">short_name</span><span class="p">,</span><span class="w"> </span><span class="n">discharge_cfs</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">pivot_wider</span><span class="p">(</span><span class="n">names_from</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">short_name</span><span class="p">,</span><span class="w"> </span><span class="n">values_from</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">discharge_cfs</span><span class="p">)</span>
+
+<span class="n">expected_days</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">data.frame</span><span class="p">(</span>
+<span class="w">  </span><span class="n">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">seq</span><span class="p">(</span><span class="nf">min</span><span class="p">(</span><span class="n">daily</span><span class="o">$</span><span class="n">date</span><span class="p">),</span><span class="w"> </span><span class="nf">max</span><span class="p">(</span><span class="n">daily</span><span class="o">$</span><span class="n">date</span><span class="p">),</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;day&quot;</span><span class="p">)</span>
+<span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">mutate</span><span class="p">(</span><span class="n">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.integer</span><span class="p">(</span><span class="nf">format</span><span class="p">(</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%Y&quot;</span><span class="p">)))</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">count</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;days_in_year&quot;</span><span class="p">)</span>
+
+<span class="n">annual_joint_completeness</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">wide_daily</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">mutate</span><span class="p">(</span>
+<span class="w">    </span><span class="n">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.integer</span><span class="p">(</span><span class="nf">format</span><span class="p">(</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%Y&quot;</span><span class="p">)),</span>
+<span class="w">    </span><span class="n">all_three_present</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">if_all</span><span class="p">(</span><span class="nf">all_of</span><span class="p">(</span><span class="n">sites</span><span class="o">$</span><span class="n">short_name</span><span class="p">),</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">.x</span><span class="p">))</span>
+<span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">group_by</span><span class="p">(</span><span class="n">year</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">summarize</span><span class="p">(</span><span class="n">days_all_three_present</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">all_three_present</span><span class="p">),</span><span class="w"> </span><span class="n">.groups</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;drop&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">left_join</span><span class="p">(</span><span class="n">expected_days</span><span class="p">,</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;year&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">mutate</span><span class="p">(</span><span class="n">pct_all_three_present</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">round</span><span class="p">(</span><span class="m">100</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">days_all_three_present</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">days_in_year</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">))</span>
+
+<span class="n">full_years</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">annual_joint_completeness</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">filter</span><span class="p">(</span><span class="n">days_in_year</span><span class="w"> </span><span class="o">%in%</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">365</span><span class="p">,</span><span class="w"> </span><span class="m">366</span><span class="p">))</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">pull</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+
+<span class="n">qualifying_years</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">annual_joint_completeness</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">filter</span><span class="p">(</span>
+<span class="w">    </span><span class="n">pct_all_three_present</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">completeness_threshold</span><span class="p">,</span>
+<span class="w">    </span><span class="n">year</span><span class="w"> </span><span class="o">%in%</span><span class="w"> </span><span class="n">full_years</span><span class="p">,</span>
+<span class="w">    </span><span class="n">year</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">final_analysis_year</span>
+<span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">arrange</span><span class="p">(</span><span class="n">year</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">pull</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+
+<span class="nf">cat</span><span class="p">(</span>
+<span class="w">  </span><span class="s">&quot;Qualifying years above&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">completeness_threshold</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;% joint completeness:&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nf">min</span><span class="p">(</span><span class="n">qualifying_years</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">max</span><span class="p">(</span><span class="n">qualifying_years</span><span class="p">),</span>
+<span class="w">  </span><span class="s">&quot;(&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">qualifying_years</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;years )\n&quot;</span>
+<span class="p">)</span>
+
+<span class="n">site_summary</span>
+<span class="n">annual_joint_completeness</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">filter</span><span class="p">(</span><span class="n">year</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="nf">min</span><span class="p">(</span><span class="n">qualifying_years</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">year</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">final_analysis_year</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">select</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">days_all_three_present</span><span class="p">,</span><span class="w"> </span><span class="n">days_in_year</span><span class="p">,</span><span class="w"> </span><span class="n">pct_all_three_present</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">head</span><span class="p">(</span><span class="m">8</span><span class="p">)</span>
+<span class="n">annual_joint_completeness</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">filter</span><span class="p">(</span><span class="n">year</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="nf">min</span><span class="p">(</span><span class="n">qualifying_years</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">year</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">final_analysis_year</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">select</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">days_all_three_present</span><span class="p">,</span><span class="w"> </span><span class="n">days_in_year</span><span class="p">,</span><span class="w"> </span><span class="n">pct_all_three_present</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">tail</span><span class="p">(</span><span class="m">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="conversion-to-annual-water-volume">
+<h2>Conversion to Annual Water Volume<a class="headerlink" href="#conversion-to-annual-water-volume" title="Link to this heading">#</a></h2>
+<p>As mentioned above, the USGS returns data expressed in terms of a rate of flow - average daily mean flow in cubic feet per second. This is a standard reporting measurement, but for our purposes we are interested in total volume. We convert cubic feet per second to acre-feet per day, and then sum the total acre-feet across each entire year for which data is complete.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert daily mean discharge to daily acre-feet, then aggregate by gage and year.</span>
+<span class="n">annual_by_site</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">daily</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">mutate</span><span class="p">(</span>
+<span class="w">    </span><span class="n">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.integer</span><span class="p">(</span><span class="nf">format</span><span class="p">(</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%Y&quot;</span><span class="p">)),</span>
+<span class="w">    </span><span class="n">daily_af</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">discharge_cfs</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">acre_feet_per_cfs_day</span>
+<span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">group_by</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">short_name</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">summarize</span><span class="p">(</span>
+<span class="w">    </span><span class="n">annual_af</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="nf">all</span><span class="p">(</span><span class="nf">is.na</span><span class="p">(</span><span class="n">daily_af</span><span class="p">)))</span><span class="w"> </span><span class="kc">NA_real_</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">daily_af</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">),</span>
+<span class="w">    </span><span class="n">.groups</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;drop&quot;</span>
+<span class="w">  </span><span class="p">)</span>
+
+<span class="n">annual_wide</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">annual_by_site</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">pivot_wider</span><span class="p">(</span><span class="n">names_from</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">short_name</span><span class="p">,</span><span class="w"> </span><span class="n">values_from</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">annual_af</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">rename</span><span class="p">(</span>
+<span class="w">    </span><span class="n">otowi_af</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Otowi</span><span class="p">,</span>
+<span class="w">    </span><span class="n">san_marcial_floodway_af</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">`San Marcial Floodway`</span><span class="p">,</span>
+<span class="w">    </span><span class="n">san_marcial_conveyance_af</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">`San Marcial Conveyance`</span>
+<span class="w">  </span><span class="p">)</span>
+
+<span class="c1"># Keep a continuous public year index, including incomplete recent years.</span>
+<span class="n">annual_output</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">data.frame</span><span class="p">(</span><span class="n">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">seq</span><span class="p">(</span><span class="nf">min</span><span class="p">(</span><span class="n">qualifying_years</span><span class="p">),</span><span class="w"> </span><span class="n">final_analysis_year</span><span class="p">))</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">left_join</span><span class="p">(</span>
+<span class="w">    </span><span class="n">annual_joint_completeness</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nf">select</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">pct_all_three_present</span><span class="p">),</span>
+<span class="w">    </span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;year&quot;</span>
+<span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">left_join</span><span class="p">(</span>
+<span class="w">    </span><span class="n">annual_wide</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nf">select</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">otowi_af</span><span class="p">,</span><span class="w"> </span><span class="n">san_marcial_floodway_af</span><span class="p">,</span><span class="w"> </span><span class="n">san_marcial_conveyance_af</span><span class="p">),</span>
+<span class="w">    </span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;year&quot;</span>
+<span class="w">  </span><span class="p">)</span>
+
+<span class="n">flow_columns</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;otowi_af&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;san_marcial_floodway_af&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;san_marcial_conveyance_af&quot;</span><span class="p">)</span>
+
+<span class="c1"># Mask years that fail the joint-completeness screen before calculating NFR.</span>
+<span class="n">annual_output</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">annual_output</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">mutate</span><span class="p">(</span><span class="nf">across</span><span class="p">(</span><span class="nf">all_of</span><span class="p">(</span><span class="n">flow_columns</span><span class="p">),</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="nf">if_else</span><span class="p">(</span><span class="n">year</span><span class="w"> </span><span class="o">%in%</span><span class="w"> </span><span class="n">qualifying_years</span><span class="p">,</span><span class="w"> </span><span class="n">.x</span><span class="p">,</span><span class="w"> </span><span class="kc">NA_real_</span><span class="p">)))</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">mutate</span><span class="p">(</span>
+<span class="w">    </span><span class="n">san_marcial_total_af</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">san_marcial_floodway_af</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">san_marcial_conveyance_af</span><span class="p">,</span>
+<span class="w">    </span><span class="n">net_flow_reduction_af</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">otowi_af</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">san_marcial_total_af</span>
+<span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">mutate</span><span class="p">(</span>
+<span class="w">    </span><span class="nf">across</span><span class="p">(</span>
+<span class="w">      </span><span class="nf">c</span><span class="p">(</span><span class="n">otowi_af</span><span class="p">,</span><span class="w"> </span><span class="n">san_marcial_floodway_af</span><span class="p">,</span><span class="w"> </span><span class="n">san_marcial_conveyance_af</span><span class="p">,</span><span class="w"> </span><span class="n">san_marcial_total_af</span><span class="p">,</span><span class="w"> </span><span class="n">net_flow_reduction_af</span><span class="p">),</span>
+<span class="w">      </span><span class="o">~</span><span class="w"> </span><span class="nf">round</span><span class="p">(</span><span class="n">.x</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="w">  </span><span class="p">)</span>
+
+<span class="c1"># This CSV is the handoff to the later public notebooks.</span>
+<span class="nf">write_csv</span><span class="p">(</span><span class="n">annual_output</span><span class="p">,</span><span class="w"> </span><span class="n">output_path</span><span class="p">)</span>
+
+<span class="nf">cat</span><span class="p">(</span><span class="s">&quot;Saved annual flow table to&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">file.path</span><span class="p">(</span><span class="s">&quot;data&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;nfr&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">basename</span><span class="p">(</span><span class="n">output_path</span><span class="p">)),</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">annual_output</span><span class="p">)</span>
+<span class="nf">tail</span><span class="p">(</span><span class="n">annual_output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="the-results">
+<h2>The Results<a class="headerlink" href="#the-results" title="Link to this heading">#</a></h2>
+<p>The figure below shows how much water flows in, how much flows out (the sum of the two San Marcial gages), and the resulting Net Flow Reduction (NFR) data series that results from subtracting outflow from inflow. (Gaps represent years for which data are incomplete.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Reshape the annual table for plotting the two flow series together.</span>
+<span class="n">flow_plot</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">annual_output</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">select</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">otowi_af</span><span class="p">,</span><span class="w"> </span><span class="n">san_marcial_total_af</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">pivot_longer</span><span class="p">(</span><span class="o">-</span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">names_to</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;series&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">values_to</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;acre_feet&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+<span class="w">  </span><span class="nf">mutate</span><span class="p">(</span>
+<span class="w">    </span><span class="n">series</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">recode</span><span class="p">(</span>
+<span class="w">      </span><span class="n">series</span><span class="p">,</span>
+<span class="w">      </span><span class="n">otowi_af</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Otowi inflow&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="n">san_marcial_total_af</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;San Marcial total outflow&quot;</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="w">  </span><span class="p">)</span>
+
+<span class="n">flow_chart</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">ggplot</span><span class="p">(</span><span class="n">flow_plot</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">acre_feet</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">series</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">geom_line</span><span class="p">(</span><span class="n">linewidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.9</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">scale_y_continuous</span><span class="p">(</span><span class="n">labels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">comma</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">labs</span><span class="p">(</span>
+<span class="w">    </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Annual inflow and outflow used in the NFR accounting table&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span>
+<span class="w">    </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Annual flow (acre-feet)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span>
+<span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">theme_minimal</span><span class="p">(</span><span class="n">base_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">12</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">theme</span><span class="p">(</span><span class="n">legend.position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;bottom&quot;</span><span class="p">)</span>
+
+<span class="n">nfr_chart</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">ggplot</span><span class="p">(</span><span class="n">annual_output</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">net_flow_reduction_af</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">geom_hline</span><span class="p">(</span><span class="n">yintercept</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;gray50&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">geom_line</span><span class="p">(</span><span class="n">linewidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.9</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;black&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">scale_y_continuous</span><span class="p">(</span><span class="n">labels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">comma</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">labs</span><span class="p">(</span>
+<span class="w">    </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Net Flow Reduction = Otowi inflow - combined San Marcial outflow&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Year&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;NFR (acre-feet)&quot;</span>
+<span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">theme_minimal</span><span class="p">(</span><span class="n">base_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">12</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">flow_chart</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">nfr_chart</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<p>This notebook creates the base level data on which the rest of the analysis builds. It does not, by itself, tell us anything about how the water is being consumed, but it does allow us to begin disentangling the complex set of factors that must be included in any analysis of how much water the Middle Rio Grande Valley (MRGV) is using, which is foundational to understanding how communities must respond to growing scarcity.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "ir-rstudio"
+        },
+        kernelOptions: {
+            name: "ir-rstudio",
+            path: "./notebooks/nfr"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'ir-rstudio'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-goal">Project Goal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-reproducible-public-record">Building a Reproducible Public Record</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-gages">The Gages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-completeness-screen">The Completeness Screen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conversion-to-annual-water-volume">Conversion to Annual Water Volume</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-results">The Results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By John Fleck & Robert P. Berrens
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026, John Fleck and Robert P. Berrens.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p><a href="https://fleck-berrens.org" target="_blank">Fleck–Berrens Lab</a></p>
+<p>Code licensed
+<a href="https://github.com/johnrfleck/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis/blob/main/LICENSE">MIT</a>.
+Written content and figures licensed
+<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

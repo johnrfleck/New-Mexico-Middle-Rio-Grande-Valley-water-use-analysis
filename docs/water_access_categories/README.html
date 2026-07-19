@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Lot Size and Water Use by Water-Access Category — methodology &#8212; NM Middle Rio Grande Water Analysis</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../../_static/documentation_options.js?v=c73c0f3e"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/water_access_categories/README';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Lot Size and Water Use by Water-Access Category — replication" href="../../notebooks/water_access_categories/water_access_categories_replication.html" />
+    <link rel="prev" title="The Greening (and Browning) of the Albuquerque Metro Area — replication" href="../../notebooks/quadrant_map/quadrant_map_replication.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="NM Middle Rio Grande Water Analysis - Home"/>
+    <img src="../../_static/logo.png" class="logo__image only-dark pst-js-only" alt="NM Middle Rio Grande Water Analysis - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../domestic_wells/README.html">Domestic Wells Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/domestic_wells/domestic_wells_replication.html">Interactive Replication Notebook</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../quadrant_map/README.html">Where Water Use Is Rising and Falling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/quadrant_map/quadrant_map_replication.html">Interactive Replication Notebook</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Lot Size and Water Use by Water-Access Category</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/water_access_categories/water_access_categories_replication.html">Interactive Replication Notebook</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/docs/water_access_categories/README.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Lot Size and Water Use by Water-Access Category — methodology</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question">Question</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#published-figures">Published figures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-four-categories">The four categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#location-limitations-for-the-well-flag">Location limitations for the well flag</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#method">Method</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-caveats">Key caveats</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="lot-size-and-water-use-by-water-access-category-methodology">
+<h1>Lot Size and Water Use by Water-Access Category — methodology<a class="headerlink" href="#lot-size-and-water-use-by-water-access-category-methodology" title="Link to this heading">#</a></h1>
+<p>Understanding where domestic wells are located, and how the consumptive use of water on residential parcels with a well relates to residential parcels solely dependent on municipal water, provides a useful tool for understanding trends in consumptive water use in the Middle Rio Grande Valley. While municipal water use is metered and overall trends are widely reported, domestic well water use is unmeasured, and has not played a significant role in Middle Rio Grande Valley water management discourse.</p>
+<p>Remote sensing tools, as gathered and freely provided by the <a class="reference external" href="https://etdata.org/">OpenET project</a>, allow us to begin assessing usage patterns across this otherwise unmeasured and unmonitored sector. While OpenET lacks the precision needed to measure water use at the scale of a single lot, careful application of the tool allows us to begin looking at relationships and trends of aggregate use across broad categories of similar residential parcels. The data suggest that  residential parcels with domestic wells tend to be substantially larger and substantially greener on average that those served solely by municipal supply.</p>
+<p>This note summarizes how the water-access-categories replication notebook
+(<code class="docutils literal notranslate"><span class="pre">notebooks/water_access_categories/water_access_categories_replication.ipynb</span></code>) classifies
+Bernalillo County residential parcels and compares them. The notebook is the source of truth;
+this is a plain-language overview.</p>
+<section id="question">
+<h2>Question<a class="headerlink" href="#question" title="Link to this heading">#</a></h2>
+<p>Within the ABCWUA drinking-water service area, how do lot size and water use compare between
+parcels that rely on the utility alone versus parcels that also have a domestic well, ditch
+(acequia/MRGCD) access, or both?</p>
+</section>
+<section id="published-figures">
+<h2>Published figures<a class="headerlink" href="#published-figures" title="Link to this heading">#</a></h2>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/lot_size_by_category_full_abcwua.png"><img alt="Lot Size by Water Access, ABCWUA Service Area" src="../../_images/lot_size_by_category_full_abcwua.png" style="width: 100%;" />
+</a>
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/effective_et_by_category_full_abcwua.png"><img alt="Effective ET by Water Access, ABCWUA Service Area" src="../../_images/effective_et_by_category_full_abcwua.png" style="width: 100%;" />
+</a>
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/total_water_use_by_category_full_abcwua.png"><img alt="Total water use per parcel by Water Access, ABCWUA Service Area" src="../../_images/total_water_use_by_category_full_abcwua.png" style="width: 100%;" />
+</a>
+</figure>
+</section>
+<section id="the-four-categories">
+<h2>The four categories<a class="headerlink" href="#the-four-categories" title="Link to this heading">#</a></h2>
+<p>Every residential parcel (assessor <code class="docutils literal notranslate"><span class="pre">PROPCLASS</span> <span class="pre">=</span> <span class="pre">'R'</span></code>) whose representative point falls inside the
+ABCWUA service area is classified by two binary flags:</p>
+<ul class="simple">
+<li><p><strong>HAS_WELL</strong> — the parcel contains at least one active, domestic-use OSE well (use codes <code class="docutils literal notranslate"><span class="pre">DOM</span></code>,
+<code class="docutils literal notranslate"><span class="pre">DOL</span></code>, <code class="docutils literal notranslate"><span class="pre">PDM</span></code>, <code class="docutils literal notranslate"><span class="pre">DCN</span></code>; PLSS centroid-stack PODs dropped, same convention as the domestic-wells
+notebook).</p></li>
+<li><p><strong>HAS_ISOLOG (“ditch water”)</strong> — at least 10% of the parcel’s area overlaps the MRGCD 2021
+ISOlog layer (MRGCD’s mapped irrigation-serviceable land) — a <strong>proxy</strong> for ditch/acequia
+access, not a literal water-right record.</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Category</p></th>
+<th class="head text-right"><p>Published n</p></th>
+<th class="head text-right"><p>Published median lot size</p></th>
+<th class="head text-right"><p>Median effective ET</p></th>
+<th class="head text-right"><p>Median total water use</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ABCWUA only</p></td>
+<td class="text-right"><p>188,123</p></td>
+<td class="text-right"><p>0.16 ac</p></td>
+<td class="text-right"><p>0.74 AF/ac</p></td>
+<td class="text-right"><p>0.12 AF/yr</p></td>
+</tr>
+<tr class="row-odd"><td><p>ABCWUA + well</p></td>
+<td class="text-right"><p>2,631</p></td>
+<td class="text-right"><p>0.59 ac</p></td>
+<td class="text-right"><p>1.29 AF/ac</p></td>
+<td class="text-right"><p>0.71 AF/yr</p></td>
+</tr>
+<tr class="row-even"><td><p>ABCWUA + ditch</p></td>
+<td class="text-right"><p>1,675</p></td>
+<td class="text-right"><p>0.83 ac</p></td>
+<td class="text-right"><p>1.75 AF/ac</p></td>
+<td class="text-right"><p>1.32 AF/yr</p></td>
+</tr>
+<tr class="row-odd"><td><p>ABCWUA + well + ditch</p></td>
+<td class="text-right"><p>532</p></td>
+<td class="text-right"><p>1.27 ac</p></td>
+<td class="text-right"><p>1.93 AF/ac</p></td>
+<td class="text-right"><p>2.57 AF/yr</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>All three metrics rise together: a roughly 8× spread in lot size, 2.6× in per-acre effective ET,
+and a compounding ~22× spread in total water use per parcel from utility-only lots to lots with
+every water source.</p>
+</section>
+<section id="location-limitations-for-the-well-flag">
+<h2>Location limitations for the well flag<a class="headerlink" href="#location-limitations-for-the-well-flag" title="Link to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">HAS_WELL</span></code> classification depends entirely on whether an OSE well record has a location
+precise enough to place it inside a specific parcel. A meaningful share of records do not, and
+the gap is not evenly spread across the well population.</p>
+<p>Of the 9,406 active domestic wells inside the ABCWUA service area, <strong>4,777 (50.8%) share a
+coordinate with ten or more other wells and carry no finer location than a roughly 10–160 acre
+PLSS legal-description cell</strong> — a “stack.” Because we cannot tell which specific parcel within
+that shared area actually holds each well, these are dropped from the well count entirely rather
+than guessed at.</p>
+<p>This gap tracks well age closely, not randomly:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head text-right"><p>Wells finished before 1990</p></th>
+<th class="head text-right"><p>Wells finished 1990 or later</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Dropped (imprecise, shared location)</p></td>
+<td class="text-right"><p>68.0%</p></td>
+<td class="text-right"><p>1.2%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kept (well flag set)</p></td>
+<td class="text-right"><p>32.0%</p></td>
+<td class="text-right"><p>98.8%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This pattern — a sharp break right around 1990, with essentially no imprecisely-located wells
+after 2000 — looks like a change in OSE recordkeeping practice (routine capture of finer location
+detail beginning around 1990) rather than anything particular about older wells.</p>
+<p><strong>This means the category comparisons in this analysis are conservative in one specific,
+identifiable direction.</strong> A dropped well can only cause a parcel to be <em>missed</em> from “ABCWUA +
+well” and counted as “ABCWUA only” instead — never the reverse, since the drop rule only removes
+wells from consideration, it never adds one. Some share of the parcels counted in “ABCWUA only”
+do have a well we simply could not confirm. That pulls this category’s median lot size and water
+use <em>upward</em>, toward “ABCWUA + well” values — meaning the true gap between the two categories is,
+if anything, larger than the published figures show, not smaller.</p>
+</section>
+<section id="method">
+<h2>Method<a class="headerlink" href="#method" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Residential parcels.</strong> All Bernalillo County residential parcels whose representative point falls
+inside the ABCWUA service-area boundary (the OSE Public Water System polygon — see caveats).</p></li>
+<li><p><strong>Lot size.</strong> Parcel geometry area (<code class="docutils literal notranslate"><span class="pre">ACRES</span></code>).</p></li>
+<li><p><strong>Effective ET.</strong> OpenET ensemble evapotranspiration − 0.7 × GRIDMET precipitation (the same
+FAO-rule-of-thumb convention used in the quadrant-map notebook — see
+<code class="docutils literal notranslate"><span class="pre">docs/quadrant_map/README.md</span></code> for the citation), 2024, summed over each parcel’s actual
+geometry via Google Earth Engine’s <code class="docutils literal notranslate"><span class="pre">reduceRegions</span></code> — a genuine per-parcel total, not a
+depth-times-area approximation.</p></li>
+<li><p><strong>Three summary statistics per category</strong>, all <strong>medians</strong> (the lot-size distribution is
+strongly right-skewed, so means would overstate typical values):</p>
+<ul class="simple">
+<li><p>Median lot size (acres)</p></li>
+<li><p>Median effective ET per unit area (acre-feet/acre) — normalizes out lot-size differences</p></li>
+<li><p>Median total effective ET per parcel (acre-feet/year) — the actual volume on the median
+parcel, not a multiplication of the other two medians (see caveats)</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="key-caveats">
+<h2>Key caveats<a class="headerlink" href="#key-caveats" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>“Ditch water” = ISOlog overlap, not a literal water-right record.</strong> The MRGCD ISOlog layer
+maps irrigation-serviceable land, not confirmed acequia shares or actual diversions.</p></li>
+<li><p><strong>Category membership is a snapshot</strong> (2021 ISOlog, current OSE POD vintage), not tracked
+through time.</p></li>
+<li><p><strong>Domestic well presence is conservative.</strong> A well is only counted if its OSE record has a
+precise-enough location — see “Location limitations for the well flag” above for the scope of
+this undercount and why it biases the “ABCWUA only” category’s numbers upward, not down.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">median(A)</span> <span class="pre">×</span> <span class="pre">median(B)</span> <span class="pre">≠</span> <span class="pre">median(A</span> <span class="pre">×</span> <span class="pre">B)</span></code>.</strong> The total-water-use chart uses each parcel’s own
+true per-parcel ET total, not the lot-size median multiplied by the per-acre-ET median — those
+two quantities differ by up to ~10% in the middle categories because lot size and per-acre ET
+intensity aren’t perfectly correlated across parcels.</p></li>
+<li><p><strong>Parcel-scale resolution.</strong> Most residential lots here (median 0.16–1.3 acres) are one or two
+OpenET/Landsat pixels (~30 m) or smaller — an individual parcel’s ET value carries real
+pixel-mixing noise. The category-level medians (built from thousands of parcels, except
+category 4’s 532) are far more robust than any single parcel’s number.</p></li>
+<li><p><strong>The ABCWUA boundary is provisional</strong> — see <code class="docutils literal notranslate"><span class="pre">docs/domestic_wells/README.md</span></code> and
+<code class="docutils literal notranslate"><span class="pre">data/domestic_wells/README.md</span></code> for the same open boundary question that applies here.</p></li>
+<li><p><strong>The 0.7× effective-precipitation coefficient</strong> is the same FAO rule-of-thumb convention used
+throughout this project — see <code class="docutils literal notranslate"><span class="pre">docs/quadrant_map/README.md</span></code> for the citation and its caveats.</p></li>
+<li><p><strong>2024 cross-section only</strong> — this is a snapshot, not a trend.</p></li>
+<li><p><strong>Residential parcels only</strong> (assessor <code class="docutils literal notranslate"><span class="pre">PROPCLASS</span> <span class="pre">=</span> <span class="pre">'R'</span></code>) — commercial, vacant, and other
+non-residential parcels are excluded from all four categories.</p></li>
+</ul>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs/water_access_categories"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../notebooks/quadrant_map/quadrant_map_replication.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">The Greening (and Browning) of the Albuquerque Metro Area — replication</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../notebooks/water_access_categories/water_access_categories_replication.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Lot Size and Water Use by Water-Access Category — replication</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question">Question</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#published-figures">Published figures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-four-categories">The four categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#location-limitations-for-the-well-flag">Location limitations for the well flag</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#method">Method</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-caveats">Key caveats</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By John Fleck & Robert P. Berrens
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026, John Fleck and Robert P. Berrens.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p><a href="https://fleck-berrens.org" target="_blank">Fleck–Berrens Lab</a></p>
+<p>Code licensed
+<a href="https://github.com/johnrfleck/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis/blob/main/LICENSE">MIT</a>.
+Written content and figures licensed
+<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

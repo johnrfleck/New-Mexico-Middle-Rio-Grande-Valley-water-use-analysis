@@ -1,0 +1,996 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>The Greening (and Browning) of the Albuquerque Metro Area — replication &#8212; NM Middle Rio Grande Water Analysis</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../../_static/documentation_options.js?v=c73c0f3e"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/quadrant_map/quadrant_map_replication';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Lot Size and Water Use by Water-Access Category — methodology" href="../../docs/water_access_categories/README.html" />
+    <link rel="prev" title="The Greening (and Browning) of the Albuquerque Metro Area — methodology" href="../../docs/quadrant_map/README.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../docs/index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="NM Middle Rio Grande Water Analysis - Home"/>
+    <img src="../../_static/logo.png" class="logo__image only-dark pst-js-only" alt="NM Middle Rio Grande Water Analysis - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../docs/domestic_wells/README.html">Domestic Wells Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../domestic_wells/domestic_wells_replication.html">Interactive Replication Notebook</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../docs/quadrant_map/README.html">Where Water Use Is Rising and Falling</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Interactive Replication Notebook</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../docs/water_access_categories/README.html">Lot Size and Water Use by Water-Access Category</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../water_access_categories/water_access_categories_replication.html">Interactive Replication Notebook</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/notebooks/quadrant_map/quadrant_map_replication.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The Greening (and Browning) of the Albuquerque Metro Area — replication</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#method-summary">Method summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-google-earth-engine-account">Setup — Google Earth Engine account</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-define-the-albuquerque-metro-aoi-census-urban-area-public-data">Step 1 — Define the Albuquerque metro AOI (Census Urban Area, public data)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-baseline-effective-et-2001-2005">Step 2 — Baseline effective ET (2001-2005)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-per-pixel-trend-2001-2024">Step 3 — Per-pixel trend (2001-2024)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-download-both-rasters">Step 4 — Download both rasters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-classify-into-five-water-use-categories">Step 5 — Classify into five water-use categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-render-the-map">Step 6 — Render the map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-to-the-published-figure">Compare to the published figure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-and-caveats">Notes and caveats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-greening-and-browning-of-the-albuquerque-metro-area-replication">
+<h1>The Greening (and Browning) of the Albuquerque Metro Area — replication<a class="headerlink" href="#the-greening-and-browning-of-the-albuquerque-metro-area-replication" title="Link to this heading">#</a></h1>
+<p>This notebook reproduces the “quadrant map” showing where water use across the Albuquerque, NM
+metro area has been <strong>rising</strong> or <strong>falling</strong> over the last two decades. It classifies every
+30-meter pixel in the Albuquerque Census Urban Area into one of five categories by combining:</p>
+<ul class="simple">
+<li><p><strong>Baseline</strong> — how much water the land surface used (evapotranspiration net of precipitation)
+in 2001-2005, split into <strong>wet</strong> vs. <strong>dry</strong> halves relative to the rest of the metro area, and</p></li>
+<li><p><strong>Trend</strong> — whether that water use has been <strong>gaining</strong> or <strong>losing</strong> (or barely changing) from
+2001 to 2024.</p></li>
+</ul>
+<p>The five resulting classes — Wet/gaining, Dry/gaining, Little change, Wet/losing, Dry/losing —
+are a compact way of asking “where is the metro area’s water footprint expanding, and where is it
+shrinking?” without needing parcel-level data.</p>
+<p><strong>Published figure</strong> (<code class="docutils literal notranslate"><span class="pre">docs/quadrant_map/openet_quadrant_map_urbanarea_minus_river.png</span></code>) — the
+version presented in the accompanying talk. This notebook reproduces it from public data sources
+with one documented simplification (see “Notes and caveats” at the end): the published version
+additionally subtracts a custom-digitized river-corridor shapefile that is not publicly
+redistributable; this notebook uses the full Census Urban Area boundary instead, so results differ
+slightly along the river channel itself.</p>
+<section id="method-summary">
+<h2>Method summary<a class="headerlink" href="#method-summary" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Water-use metric:</strong> <em>effective ET</em> = OpenET ensemble evapotranspiration − 0.7 × GRIDMET
+precipitation, both from Google Earth Engine, at 30 m resolution.</p></li>
+<li><p><strong>Baseline:</strong> mean annual effective ET, 2001-2005.</p></li>
+<li><p><strong>Trend:</strong> per-pixel linear regression slope of annual effective ET, 2001-2024 (units: mm/yr²).</p></li>
+<li><p><strong>Smoothing:</strong> NaN-aware Gaussian filter (σ = 2 pixels, ≈ 60 m) applied to both the baseline and
+trend rasters before classifying, so the map reads as legible patches rather than
+salt-and-pepper noise.</p></li>
+<li><p><strong>Classification:</strong> baseline <strong>median split</strong> (wet vs. dry, relative to this AOI) × trend
+<strong>sign</strong> (gaining vs. losing), with the bottom <strong>tercile of |trend|</strong> pulled out as a separate
+“Little Change” class. Thresholds are re-derived from this AOI’s own distribution — they are
+<em>relative</em>, not absolute, so they should not be compared across differently-shaped AOIs.</p></li>
+</ul>
+</section>
+<section id="setup-google-earth-engine-account">
+<h2>Setup — Google Earth Engine account<a class="headerlink" href="#setup-google-earth-engine-account" title="Link to this heading">#</a></h2>
+<p>This notebook pulls satellite-derived data directly from <strong>Google Earth Engine (GEE)</strong>, a free
+cloud platform for planetary-scale geospatial analysis. You’ll need your own (free) GEE account
+and a Google Cloud project with the Earth Engine API enabled — takes about five minutes:</p>
+<ol class="arabic simple">
+<li><p><strong>Sign up for Earth Engine</strong> (no cost for research/non-commercial use):
+<a class="reference external" href="https://earthengine.google.com/signup/">https://earthengine.google.com/signup/</a></p></li>
+<li><p><strong>Create a Google Cloud project</strong> (or reuse one you have) and enable the Earth Engine API:
+<a class="reference external" href="https://console.cloud.google.com/">https://console.cloud.google.com/</a> → <em>APIs &amp; Services</em> → enable “Google Earth Engine API”.
+Or register the project directly at <a class="reference external" href="https://code.earthengine.google.com/register">https://code.earthengine.google.com/register</a>.</p></li>
+<li><p><strong>Install the Python client</strong> if you haven’t already: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">earthengine-api</span></code>.</p></li>
+<li><p><strong>Replace the placeholder below</strong> (<code class="docutils literal notranslate"><span class="pre">GEE_PROJECT</span></code>) with your own Google Cloud project ID.</p></li>
+<li><p>Run the next cell. The first time, <code class="docutils literal notranslate"><span class="pre">ee.Authenticate()</span></code> opens a browser window for you to log
+in and grant access — after that, credentials are cached locally and you won’t need to
+authenticate again on this machine.</p></li>
+</ol>
+<p><strong>Requirements:</strong> <code class="docutils literal notranslate"><span class="pre">earthengine-api</span></code>, <code class="docutils literal notranslate"><span class="pre">geopandas</span></code>, <code class="docutils literal notranslate"><span class="pre">requests</span></code>, <code class="docutils literal notranslate"><span class="pre">rasterio</span></code>, <code class="docutils literal notranslate"><span class="pre">scipy</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>,
+<code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> (Python 3.10+).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">ee</span>
+
+<span class="c1"># --- EDIT THIS: your own Google Cloud project ID with the Earth Engine API enabled ---</span>
+<span class="n">GEE_PROJECT</span> <span class="o">=</span> <span class="s2">&quot;your-gee-project-id&quot;</span>  <span class="c1"># &lt;-- replace with your project ID</span>
+
+<span class="n">ee</span><span class="o">.</span><span class="n">Authenticate</span><span class="p">()</span>  <span class="c1"># first run only: opens a browser login; cached afterward</span>
+<span class="n">ee</span><span class="o">.</span><span class="n">Initialize</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="n">GEE_PROJECT</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Earth Engine initialized with project:&quot;</span><span class="p">,</span> <span class="n">GEE_PROJECT</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-1-define-the-albuquerque-metro-aoi-census-urban-area-public-data">
+<h2>Step 1 — Define the Albuquerque metro AOI (Census Urban Area, public data)<a class="headerlink" href="#step-1-define-the-albuquerque-metro-aoi-census-urban-area-public-data" title="Link to this heading">#</a></h2>
+<p>The area of interest is the Census Bureau’s <strong>“Albuquerque, NM Urban Area”</strong> (2020 Urban Area
+boundary, GEOID <code class="docutils literal notranslate"><span class="pre">01171</span></code>) — a single contiguous polygon covering the built-up Albuquerque metro
+footprint (ABCWUA + Rio Rancho + Corrales + surrounding development), fetched live from the
+Census Bureau’s public <strong>TIGERweb</strong> REST API. No download or account needed for this step.</p>
+<p>The published talk figure additionally subtracts a narrow river-corridor strip (the
+levee-to-levee channel) from this polygon, using a custom-digitized shapefile that isn’t publicly
+distributed — see the caveats at the end. This notebook uses the <strong>full Urban Area polygon</strong>
+without that subtraction, which is a public-data-only simplification.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shapely.geometry</span>
+
+<span class="n">TIGERWEB_URL</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Urban/MapServer/8/query&quot;</span>
+<span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">fetch_urban_area</span><span class="p">(</span><span class="n">geoid</span><span class="o">=</span><span class="s2">&quot;01171&quot;</span><span class="p">,</span> <span class="n">name_contains</span><span class="o">=</span><span class="s2">&quot;Albuquerque&quot;</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Fetch a Census Urban Area polygon from TIGERweb by GEOID, falling back to a name search</span>
+<span class="sd">    if the GEOID field name has changed vintage-to-vintage (TIGERweb has used both GEOID and</span>
+<span class="sd">    GEOID20 across releases).&quot;&quot;&quot;</span>
+    <span class="n">field_attempts</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;GEOID20=&#39;</span><span class="si">{</span><span class="n">geoid</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;GEOID=&#39;</span><span class="si">{</span><span class="n">geoid</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;UACE20=&#39;</span><span class="si">{</span><span class="n">geoid</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">where</span> <span class="ow">in</span> <span class="n">field_attempts</span><span class="p">:</span>
+        <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">TIGERWEB_URL</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span>
+            <span class="s2">&quot;where&quot;</span><span class="p">:</span> <span class="n">where</span><span class="p">,</span> <span class="s2">&quot;outFields&quot;</span><span class="p">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="s2">&quot;returnGeometry&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span> <span class="s2">&quot;f&quot;</span><span class="p">:</span> <span class="s2">&quot;geojson&quot;</span><span class="p">,</span>
+        <span class="p">},</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">resp</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+        <span class="n">gj</span> <span class="o">=</span> <span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">gj</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;features&quot;</span><span class="p">):</span>
+            <span class="n">gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="o">.</span><span class="n">from_features</span><span class="p">(</span><span class="n">gj</span><span class="p">[</span><span class="s2">&quot;features&quot;</span><span class="p">],</span> <span class="n">crs</span><span class="o">=</span><span class="s2">&quot;EPSG:4326&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Matched on &#39;</span><span class="si">{</span><span class="n">where</span><span class="si">}</span><span class="s2">&#39; -&gt; </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">gdf</span><span class="p">)</span><span class="si">}</span><span class="s2"> feature(s)&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">gdf</span>
+    <span class="c1"># Fallback: name search</span>
+    <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">TIGERWEB_URL</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;where&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;NAME LIKE &#39;%</span><span class="si">{</span><span class="n">name_contains</span><span class="si">}</span><span class="s2">%&#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;outFields&quot;</span><span class="p">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;returnGeometry&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span> <span class="s2">&quot;f&quot;</span><span class="p">:</span> <span class="s2">&quot;geojson&quot;</span><span class="p">,</span>
+    <span class="p">},</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">resp</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+    <span class="n">gj</span> <span class="o">=</span> <span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">gj</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;features&quot;</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span>
+            <span class="s2">&quot;Could not find the Albuquerque Urban Area via TIGERweb GEOID or name search. &quot;</span>
+            <span class="s2">&quot;Check https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Urban/MapServer/8 &quot;</span>
+            <span class="s2">&quot;directly and adjust the query.&quot;</span>
+        <span class="p">)</span>
+    <span class="n">gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="o">.</span><span class="n">from_features</span><span class="p">(</span><span class="n">gj</span><span class="p">[</span><span class="s2">&quot;features&quot;</span><span class="p">],</span> <span class="n">crs</span><span class="o">=</span><span class="s2">&quot;EPSG:4326&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Matched by name search -&gt; </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">gdf</span><span class="p">)</span><span class="si">}</span><span class="s2"> feature(s)&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">gdf</span>
+
+<span class="n">aoi_gdf</span> <span class="o">=</span> <span class="n">fetch_urban_area</span><span class="p">()</span>
+<span class="n">label_field</span> <span class="o">=</span> <span class="nb">next</span><span class="p">((</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;NAMELSAD20&quot;</span><span class="p">,</span> <span class="s2">&quot;NAMELSAD&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">aoi_gdf</span><span class="o">.</span><span class="n">columns</span><span class="p">),</span> <span class="kc">None</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">label_field</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Urban Area:&quot;</span><span class="p">,</span> <span class="n">aoi_gdf</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">label_field</span><span class="p">])</span>
+
+<span class="n">aoi_gdf_utm</span> <span class="o">=</span> <span class="n">aoi_gdf</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="s2">&quot;EPSG:32613&quot;</span><span class="p">)</span>  <span class="c1"># UTM 13N, matches the rest of this project&#39;s rasters</span>
+<span class="n">area_km2</span> <span class="o">=</span> <span class="n">aoi_gdf_utm</span><span class="o">.</span><span class="n">area</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="mf">1e6</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;AOI area: </span><span class="si">{</span><span class="n">area_km2</span><span class="si">:</span><span class="s2">,.1f</span><span class="si">}</span><span class="s2"> km2&quot;</span><span class="p">)</span>
+
+<span class="n">aoi_geom_4326</span> <span class="o">=</span> <span class="n">shapely</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">mapping</span><span class="p">(</span><span class="n">aoi_gdf</span><span class="o">.</span><span class="n">dissolve</span><span class="p">()</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">aoi</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Geometry</span><span class="p">(</span><span class="n">aoi_geom_4326</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-2-baseline-effective-et-2001-2005">
+<h2>Step 2 — Baseline effective ET (2001-2005)<a class="headerlink" href="#step-2-baseline-effective-et-2001-2005" title="Link to this heading">#</a></h2>
+<p><em>Effective ET</em> nets out the water that fell as rain from the water that left the land surface,
+leaving a proxy for water use beyond what precipitation alone supplies:</p>
+<p><code class="docutils literal notranslate"><span class="pre">effective_ET</span> <span class="pre">=</span> <span class="pre">OpenET_ensemble</span> <span class="pre">−</span> <span class="pre">0.7</span> <span class="pre">×</span> <span class="pre">GRIDMET_precip</span></code></p>
+<p>Both terms come from public Earth Engine collections:</p>
+<ul class="simple">
+<li><p><strong>OpenET ensemble</strong> (<code class="docutils literal notranslate"><span class="pre">OpenET/ENSEMBLE/CONUS/GRIDMET/MONTHLY/v2_0</span></code>) — monthly evapotranspiration
+(mm), already an ensemble of six ET models. Summed across the year gives annual ET.</p></li>
+<li><p><strong>GRIDMET</strong> (<code class="docutils literal notranslate"><span class="pre">IDAHO_EPSCOR/GRIDMET</span></code>) — daily precipitation (mm), summed across the year gives
+annual precipitation.</p></li>
+</ul>
+<p>The <strong>baseline</strong> is the mean of the annual effective-ET rasters for 2001, 2002, 2003, 2004, 2005.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">OPENET_COLLECTION</span> <span class="o">=</span> <span class="s2">&quot;OpenET/ENSEMBLE/CONUS/GRIDMET/MONTHLY/v2_0&quot;</span>
+<span class="n">OPENET_BAND</span> <span class="o">=</span> <span class="s2">&quot;et_ensemble_mad&quot;</span>
+<span class="n">GRIDMET_COLLECTION</span> <span class="o">=</span> <span class="s2">&quot;IDAHO_EPSCOR/GRIDMET&quot;</span>
+<span class="n">GRIDMET_BAND</span> <span class="o">=</span> <span class="s2">&quot;pr&quot;</span>
+<span class="n">PRECIP_COEF</span> <span class="o">=</span> <span class="mf">0.7</span>  <span class="c1"># FAO effective-rainfall rule of thumb for arid regions</span>
+                    <span class="c1"># (Allen et al., 1998; Brouwer &amp; Heibloem, 1986) — see &quot;Notes and caveats&quot;</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">annual_effective_et</span><span class="p">(</span><span class="n">year</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Annual effective ET (mm) for a calendar year, clipped to the AOI.&quot;&quot;&quot;</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Date</span><span class="o">.</span><span class="n">fromYMD</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">end</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Date</span><span class="o">.</span><span class="n">fromYMD</span><span class="p">(</span><span class="n">year</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">et</span> <span class="o">=</span> <span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">(</span><span class="n">OPENET_COLLECTION</span><span class="p">)</span>
+          <span class="o">.</span><span class="n">filterDate</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">OPENET_BAND</span><span class="p">)</span>
+          <span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">toDouble</span><span class="p">())</span>
+    <span class="n">precip</span> <span class="o">=</span> <span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">(</span><span class="n">GRIDMET_COLLECTION</span><span class="p">)</span>
+              <span class="o">.</span><span class="n">filterDate</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">GRIDMET_BAND</span><span class="p">)</span>
+              <span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">toDouble</span><span class="p">())</span>
+    <span class="n">eff_et</span> <span class="o">=</span> <span class="n">et</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">precip</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">PRECIP_COEF</span><span class="p">))</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;eff_et&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">eff_et</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">aoi</span><span class="p">)</span>
+
+<span class="n">BASELINE_YEARS</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2001</span><span class="p">,</span> <span class="mi">2006</span><span class="p">))</span>
+<span class="n">baseline_stack</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">([</span><span class="n">annual_effective_et</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">BASELINE_YEARS</span><span class="p">])</span>
+<span class="n">baseline_image</span> <span class="o">=</span> <span class="n">baseline_stack</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;baseline&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Baseline: mean effective ET, </span><span class="si">{</span><span class="n">BASELINE_YEARS</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">BASELINE_YEARS</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-3-per-pixel-trend-2001-2024">
+<h2>Step 3 — Per-pixel trend (2001-2024)<a class="headerlink" href="#step-3-per-pixel-trend-2001-2024" title="Link to this heading">#</a></h2>
+<p>For each pixel, fit a straight line through its 24 annual effective-ET values
+(2001 through 2024) and keep the <strong>slope</strong> — mm per year, per year (i.e. mm/yr²). A positive
+slope means effective ET is rising at that pixel (more water being used than precipitation
+supplies, and increasingly so); negative means it’s falling.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">TREND_START</span><span class="p">,</span> <span class="n">TREND_END</span> <span class="o">=</span> <span class="mi">2001</span><span class="p">,</span> <span class="mi">2024</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">annual_effective_et_ee</span><span class="p">(</span><span class="n">year_ee</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Same effective-ET calculation as Step 2, but built from an ee.Number so it can be used</span>
+<span class="sd">    inside a server-side ee.List.map() over the trend years.&quot;&quot;&quot;</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">year_ee</span><span class="p">)</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Date</span><span class="o">.</span><span class="n">fromYMD</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">end</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Date</span><span class="o">.</span><span class="n">fromYMD</span><span class="p">(</span><span class="n">year</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">et</span> <span class="o">=</span> <span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">(</span><span class="n">OPENET_COLLECTION</span><span class="p">)</span>
+          <span class="o">.</span><span class="n">filterDate</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">OPENET_BAND</span><span class="p">)</span>
+          <span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">toDouble</span><span class="p">())</span>
+    <span class="n">precip</span> <span class="o">=</span> <span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">(</span><span class="n">GRIDMET_COLLECTION</span><span class="p">)</span>
+              <span class="o">.</span><span class="n">filterDate</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">GRIDMET_BAND</span><span class="p">)</span>
+              <span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">toDouble</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">et</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">precip</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">PRECIP_COEF</span><span class="p">))</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;eff_et&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">aoi</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">_prep</span><span class="p">(</span><span class="n">year</span><span class="p">):</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">annual_effective_et_ee</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">addBands</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">toFloat</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;constant&quot;</span><span class="p">))</span>
+               <span class="o">.</span><span class="n">addBands</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">year</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">TREND_START</span><span class="p">))</span><span class="o">.</span><span class="n">toFloat</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;t&quot;</span><span class="p">))</span>
+               <span class="o">.</span><span class="n">select</span><span class="p">([</span><span class="s2">&quot;constant&quot;</span><span class="p">,</span> <span class="s2">&quot;t&quot;</span><span class="p">,</span> <span class="s2">&quot;eff_et&quot;</span><span class="p">]))</span>
+
+<span class="n">years</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">List</span><span class="o">.</span><span class="n">sequence</span><span class="p">(</span><span class="n">TREND_START</span><span class="p">,</span> <span class="n">TREND_END</span><span class="p">)</span>
+<span class="n">annual_collection</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">(</span><span class="n">years</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">_prep</span><span class="p">))</span>
+
+<span class="n">fit</span> <span class="o">=</span> <span class="n">annual_collection</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">linearRegression</span><span class="p">(</span><span class="n">numX</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">numY</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">trend_image</span> <span class="o">=</span> <span class="p">(</span><span class="n">fit</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;coefficients&quot;</span><span class="p">)</span>
+               <span class="o">.</span><span class="n">arrayProject</span><span class="p">([</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">arrayFlatten</span><span class="p">([[</span><span class="s2">&quot;constant&quot;</span><span class="p">,</span> <span class="s2">&quot;slope&quot;</span><span class="p">]])</span>
+               <span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;slope&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;trend&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">aoi</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Trend: per-pixel linear slope of effective ET, </span><span class="si">{</span><span class="n">TREND_START</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">TREND_END</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-4-download-both-rasters">
+<h2>Step 4 — Download both rasters<a class="headerlink" href="#step-4-download-both-rasters" title="Link to this heading">#</a></h2>
+<p>Both rasters are requested as GeoTIFFs at 30 m resolution in UTM Zone 13N (EPSG:32613), matching
+the rest of this project’s spatial outputs. The Albuquerque Urban Area (~690 km²) at 30 m is
+about 750,000 pixels per raster — comfortably inside Earth Engine’s synchronous per-request
+download limit, so no Google Drive export step is needed here.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">urllib.request</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">OUT_CRS</span> <span class="o">=</span> <span class="s2">&quot;EPSG:32613&quot;</span>
+<span class="n">SCALE</span> <span class="o">=</span> <span class="mi">30</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">find_package_root</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">cur</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">start</span> <span class="ow">or</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">())</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="n">cur</span><span class="p">,</span> <span class="o">*</span><span class="n">cur</span><span class="o">.</span><span class="n">parents</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">/</span> <span class="s2">&quot;data&quot;</span> <span class="o">/</span> <span class="s2">&quot;quadrant_map&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">is_dir</span><span class="p">():</span>
+            <span class="k">return</span> <span class="n">p</span>
+    <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span>
+        <span class="s2">&quot;Could not find the package root (containing data/quadrant_map) above the notebook.&quot;</span><span class="p">)</span>
+
+<span class="n">PKG_ROOT</span> <span class="o">=</span> <span class="n">find_package_root</span><span class="p">()</span>
+<span class="n">OUT_DIR</span> <span class="o">=</span> <span class="n">PKG_ROOT</span> <span class="o">/</span> <span class="s2">&quot;data&quot;</span> <span class="o">/</span> <span class="s2">&quot;quadrant_map&quot;</span> <span class="o">/</span> <span class="s2">&quot;output&quot;</span>
+<span class="n">OUT_DIR</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">download_image</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">out_path</span><span class="p">,</span> <span class="n">band_name</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">band_name</span><span class="p">)</span><span class="o">.</span><span class="n">getDownloadURL</span><span class="p">({</span>
+        <span class="s2">&quot;scale&quot;</span><span class="p">:</span> <span class="n">SCALE</span><span class="p">,</span> <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="n">aoi</span><span class="p">,</span> <span class="s2">&quot;crs&quot;</span><span class="p">:</span> <span class="n">OUT_CRS</span><span class="p">,</span>
+        <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;GEO_TIFF&quot;</span><span class="p">,</span> <span class="s2">&quot;filePerBand&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="p">})</span>
+    <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">out_path</span><span class="p">)</span>
+    <span class="n">mb</span> <span class="o">=</span> <span class="n">out_path</span><span class="o">.</span><span class="n">stat</span><span class="p">()</span><span class="o">.</span><span class="n">st_size</span> <span class="o">/</span> <span class="mf">1e6</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Wrote </span><span class="si">{</span><span class="n">out_path</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">mb</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> MB)&quot;</span><span class="p">)</span>
+
+<span class="n">baseline_path</span> <span class="o">=</span> <span class="n">OUT_DIR</span> <span class="o">/</span> <span class="s2">&quot;openet_effective_et_baseline_2001_2005.tif&quot;</span>
+<span class="n">trend_path</span> <span class="o">=</span> <span class="n">OUT_DIR</span> <span class="o">/</span> <span class="s2">&quot;openet_effective_et_trend_2001_2024.tif&quot;</span>
+<span class="n">download_image</span><span class="p">(</span><span class="n">baseline_image</span><span class="p">,</span> <span class="n">baseline_path</span><span class="p">,</span> <span class="s2">&quot;baseline&quot;</span><span class="p">)</span>
+<span class="n">download_image</span><span class="p">(</span><span class="n">trend_image</span><span class="p">,</span> <span class="n">trend_path</span><span class="p">,</span> <span class="s2">&quot;trend&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-5-classify-into-five-water-use-categories">
+<h2>Step 5 — Classify into five water-use categories<a class="headerlink" href="#step-5-classify-into-five-water-use-categories" title="Link to this heading">#</a></h2>
+<p>Both rasters are smoothed with a <strong>NaN-aware Gaussian filter</strong> (σ = 2 pixels, ≈ 60 m) before
+classifying — smoothing <code class="docutils literal notranslate"><span class="pre">value</span> <span class="pre">×</span> <span class="pre">mask</span></code> and <code class="docutils literal notranslate"><span class="pre">mask</span></code> separately and dividing, so no-data edges don’t
+bleed incorrect values into the AOI interior. Then:</p>
+<ol class="arabic simple">
+<li><p><strong>Baseline</strong> is split at its own <strong>median</strong> into “wet” (above median) vs. “dry” (below median).</p></li>
+<li><p><strong>Trend</strong> is split by <strong>sign</strong> into “gaining” (positive slope) vs. “losing” (negative slope).</p></li>
+<li><p>Pixels whose <strong>|trend|</strong> falls in the <strong>bottom third</strong> (tercile) of the AOI’s trend-magnitude
+distribution are reclassified as <strong>“Little Change”</strong>, overriding the wet/dry × gaining/losing
+split — these are pixels where nothing meaningful is happening either way.</p></li>
+</ol>
+<p>This produces five classes: <strong>Wet/gaining, Dry/gaining, Little Change, Wet/losing, Dry/losing.</strong>
+Because the thresholds (median, tercile) are computed from <em>this AOI’s own</em> pixel distribution,
+they are relative rankings, not absolute water-use levels — don’t compare class assignments
+across a different AOI without re-deriving thresholds there too.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">rasterio</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.ndimage</span><span class="w"> </span><span class="kn">import</span> <span class="n">gaussian_filter</span>
+
+<span class="n">SIGMA</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># ~60 m at 30 m/pixel</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">read_band</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="k">as</span> <span class="n">src</span><span class="p">:</span>
+        <span class="n">arr</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;float64&quot;</span><span class="p">)</span>
+        <span class="n">nodata</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">nodata</span>
+        <span class="n">profile</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">nodata</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">arr</span><span class="p">[</span><span class="n">arr</span> <span class="o">==</span> <span class="n">nodata</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+    <span class="k">return</span> <span class="n">arr</span><span class="p">,</span> <span class="n">profile</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">nan_aware_smooth</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">sigma</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Gaussian-smooth an array with NaNs without letting NaNs contaminate valid pixels.&quot;&quot;&quot;</span>
+    <span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+    <span class="n">filled</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan_to_num</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">nan</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+    <span class="n">smoothed_values</span> <span class="o">=</span> <span class="n">gaussian_filter</span><span class="p">(</span><span class="n">filled</span><span class="p">,</span> <span class="n">sigma</span><span class="o">=</span><span class="n">sigma</span><span class="p">)</span>
+    <span class="n">smoothed_mask</span> <span class="o">=</span> <span class="n">gaussian_filter</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">sigma</span><span class="o">=</span><span class="n">sigma</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">np</span><span class="o">.</span><span class="n">errstate</span><span class="p">(</span><span class="n">invalid</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="n">divide</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">smoothed_values</span> <span class="o">/</span> <span class="n">smoothed_mask</span>
+    <span class="n">result</span><span class="p">[</span><span class="n">smoothed_mask</span> <span class="o">&lt;</span> <span class="mf">1e-6</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="n">baseline_raw</span><span class="p">,</span> <span class="n">profile</span> <span class="o">=</span> <span class="n">read_band</span><span class="p">(</span><span class="n">baseline_path</span><span class="p">)</span>
+<span class="n">trend_raw</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">read_band</span><span class="p">(</span><span class="n">trend_path</span><span class="p">)</span>
+
+<span class="n">baseline_smooth</span> <span class="o">=</span> <span class="n">nan_aware_smooth</span><span class="p">(</span><span class="n">baseline_raw</span><span class="p">,</span> <span class="n">SIGMA</span><span class="p">)</span>
+<span class="n">trend_smooth</span> <span class="o">=</span> <span class="n">nan_aware_smooth</span><span class="p">(</span><span class="n">trend_raw</span><span class="p">,</span> <span class="n">SIGMA</span><span class="p">)</span>
+
+<span class="n">valid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">baseline_smooth</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">trend_smooth</span><span class="p">)</span>
+<span class="n">baseline_median</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmedian</span><span class="p">(</span><span class="n">baseline_smooth</span><span class="p">[</span><span class="n">valid</span><span class="p">])</span>
+<span class="n">trend_abs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">trend_smooth</span><span class="p">[</span><span class="n">valid</span><span class="p">])</span>
+<span class="n">trend_tercile_cutoff</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanpercentile</span><span class="p">(</span><span class="n">trend_abs</span><span class="p">,</span> <span class="mi">100</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Baseline median: </span><span class="si">{</span><span class="n">baseline_median</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> mm/yr&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Trend |slope| bottom-tercile cutoff: </span><span class="si">{</span><span class="n">trend_tercile_cutoff</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> mm/yr^2&quot;</span><span class="p">)</span>
+
+<span class="c1"># Class codes: 1 Little Change, 2 Dry-gaining, 3 Dry-losing, 4 Wet-gaining, 5 Wet-losing</span>
+<span class="bp">cls</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">baseline_smooth</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;uint8&quot;</span><span class="p">)</span>
+<span class="n">wet</span> <span class="o">=</span> <span class="n">baseline_smooth</span> <span class="o">&gt;=</span> <span class="n">baseline_median</span>
+<span class="n">gaining</span> <span class="o">=</span> <span class="n">trend_smooth</span> <span class="o">&gt;=</span> <span class="mi">0</span>
+<span class="n">little_change</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">trend_smooth</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">trend_tercile_cutoff</span>
+
+<span class="bp">cls</span><span class="p">[</span><span class="n">valid</span> <span class="o">&amp;</span> <span class="n">little_change</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="bp">cls</span><span class="p">[</span><span class="n">valid</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">little_change</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">wet</span> <span class="o">&amp;</span> <span class="n">gaining</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="bp">cls</span><span class="p">[</span><span class="n">valid</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">little_change</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">wet</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">gaining</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="bp">cls</span><span class="p">[</span><span class="n">valid</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">little_change</span> <span class="o">&amp;</span> <span class="n">wet</span> <span class="o">&amp;</span> <span class="n">gaining</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="bp">cls</span><span class="p">[</span><span class="n">valid</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">little_change</span> <span class="o">&amp;</span> <span class="n">wet</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">gaining</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="k">for</span> <span class="n">code_val</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Little Change&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;Dry, gaining&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;Dry, losing&quot;</span><span class="p">),</span>
+                        <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;Wet, gaining&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;Wet, losing&quot;</span><span class="p">)]:</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="bp">cls</span> <span class="o">==</span> <span class="n">code_val</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+    <span class="n">pct</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">n</span> <span class="o">/</span> <span class="nb">int</span><span class="p">(</span><span class="n">valid</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">code_val</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">label</span><span class="si">:</span><span class="s2">&lt;14</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">&gt;10,</span><span class="si">}</span><span class="s2"> px  (</span><span class="si">{</span><span class="n">pct</span><span class="si">:</span><span class="s2">5.1f</span><span class="si">}</span><span class="s2">%)&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-6-render-the-map">
+<h2>Step 6 — Render the map<a class="headerlink" href="#step-6-render-the-map" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.image</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpimage</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.font_manager</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">fm</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">Patch</span>
+
+<span class="n">SLATE</span> <span class="o">=</span> <span class="s2">&quot;#0f172a&quot;</span>
+<span class="n">GREY</span> <span class="o">=</span> <span class="s2">&quot;#5a5a5a&quot;</span>
+<span class="n">FONT</span> <span class="o">=</span> <span class="s2">&quot;Helvetica&quot;</span> <span class="k">if</span> <span class="s2">&quot;Helvetica&quot;</span> <span class="ow">in</span> <span class="p">{</span><span class="n">f</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">fm</span><span class="o">.</span><span class="n">fontManager</span><span class="o">.</span><span class="n">ttflist</span><span class="p">}</span> <span class="k">else</span> <span class="s2">&quot;Arial&quot;</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;font.family&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">FONT</span>
+
+<span class="n">CLASS_COLORS</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;#d9d9d9&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;#80cdc1&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;#dfc27d&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;#01665e&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;#8c510a&quot;</span><span class="p">}</span>
+<span class="n">LEGEND</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;Wet, gaining water&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;Dry, gaining water&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Little change&quot;</span><span class="p">),</span>
+          <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;Wet, losing water&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;Dry, losing water&quot;</span><span class="p">)]</span>
+
+<span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">baseline_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">src</span><span class="p">:</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">bounds</span>
+<span class="n">extent</span> <span class="o">=</span> <span class="p">[</span><span class="n">b</span><span class="o">.</span><span class="n">left</span><span class="p">,</span> <span class="n">b</span><span class="o">.</span><span class="n">right</span><span class="p">,</span> <span class="n">b</span><span class="o">.</span><span class="n">bottom</span><span class="p">,</span> <span class="n">b</span><span class="o">.</span><span class="n">top</span><span class="p">]</span>
+
+<span class="n">bg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="o">*</span><span class="bp">cls</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">v</span><span class="p">,</span> <span class="n">hexc</span> <span class="ow">in</span> <span class="n">CLASS_COLORS</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">bl</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">hexc</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">],</span> <span class="mi">16</span><span class="p">)</span> <span class="o">/</span> <span class="mi">255</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">hexc</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">],</span> <span class="mi">16</span><span class="p">)</span> <span class="o">/</span> <span class="mi">255</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">hexc</span><span class="p">[</span><span class="mi">5</span><span class="p">:</span><span class="mi">7</span><span class="p">],</span> <span class="mi">16</span><span class="p">)</span> <span class="o">/</span> <span class="mi">255</span>
+    <span class="n">bg</span><span class="p">[</span><span class="bp">cls</span> <span class="o">==</span> <span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">bl</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
+<span class="n">bg</span><span class="p">[</span><span class="bp">cls</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>  <span class="c1"># nodata -&gt; transparent</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mf">12.5</span><span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mf">0.03</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mf">0.97</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mf">0.90</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mf">0.06</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">bg</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="n">extent</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s2">&quot;upper&quot;</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s2">&quot;nearest&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">extent</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">extent</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">extent</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">extent</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.955</span><span class="p">,</span> <span class="s2">&quot;The Greening (and Browning) of the Albuquerque Metro Area&quot;</span><span class="p">,</span>
+         <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">SLATE</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.918</span><span class="p">,</span>
+         <span class="s2">&quot;Albuquerque, NM Census Urban Area — effective ET (OpenET - 0.7xprecip), 2001-24</span><span class="se">\n</span><span class="s2">&quot;</span>
+         <span class="s2">&quot;(replication: full Urban Area boundary, no river-corridor subtraction)&quot;</span><span class="p">,</span>
+         <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">11.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">GREY</span><span class="p">)</span>
+
+<span class="n">handles</span> <span class="o">=</span> <span class="p">[</span><span class="n">Patch</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="n">CLASS_COLORS</span><span class="p">[</span><span class="n">v</span><span class="p">],</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">lab</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span><span class="p">,</span> <span class="n">lab</span> <span class="ow">in</span> <span class="n">LEGEND</span><span class="p">]</span>
+<span class="n">leg</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="o">=</span><span class="n">handles</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Water use, 2001-24&quot;</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s2">&quot;upper left&quot;</span><span class="p">,</span>
+                <span class="n">fontsize</span><span class="o">=</span><span class="mf">10.5</span><span class="p">,</span> <span class="n">title_fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">framealpha</span><span class="o">=</span><span class="mf">0.92</span><span class="p">,</span> <span class="n">borderpad</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">leg</span><span class="o">.</span><span class="n">get_frame</span><span class="p">()</span><span class="o">.</span><span class="n">set_edgecolor</span><span class="p">(</span><span class="s2">&quot;#cccccc&quot;</span><span class="p">)</span>
+
+<span class="n">LOGO</span> <span class="o">=</span> <span class="n">PKG_ROOT</span> <span class="o">/</span> <span class="s2">&quot;docs&quot;</span> <span class="o">/</span> <span class="s2">&quot;logo.png&quot;</span>
+<span class="k">if</span> <span class="n">LOGO</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+    <span class="n">logo</span> <span class="o">=</span> <span class="n">mpimage</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">LOGO</span><span class="p">)</span>
+    <span class="n">logo_h</span> <span class="o">=</span> <span class="mf">0.036</span>
+    <span class="n">logo_w</span> <span class="o">=</span> <span class="n">logo_h</span> <span class="o">*</span> <span class="p">(</span><span class="n">logo</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">logo</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="mf">12.5</span> <span class="o">/</span> <span class="mi">11</span><span class="p">)</span>
+    <span class="n">lax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="mf">0.03</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">,</span> <span class="n">logo_w</span><span class="p">,</span> <span class="n">logo_h</span><span class="p">],</span> <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;SW&quot;</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">lax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">logo</span><span class="p">);</span> <span class="n">lax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.97</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">,</span> <span class="s2">&quot;Data: OpenET, GRIDMET, U.S. Census Bureau&quot;</span><span class="p">,</span>
+         <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">8.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">GREY</span><span class="p">)</span>
+
+<span class="n">out_png</span> <span class="o">=</span> <span class="n">OUT_DIR</span> <span class="o">/</span> <span class="s2">&quot;quadrant_map_replication.png&quot;</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">out_png</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Wrote </span><span class="si">{</span><span class="n">out_png</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="compare-to-the-published-figure">
+<h2>Compare to the published figure<a class="headerlink" href="#compare-to-the-published-figure" title="Link to this heading">#</a></h2>
+<p>The published talk figure (built with the additional river-corridor subtraction described below)
+is included in this repository at <code class="docutils literal notranslate"><span class="pre">docs/quadrant_map/openet_quadrant_map_urbanarea_minus_river.png</span></code>
+for direct comparison.</p>
+</section>
+<section id="notes-and-caveats">
+<h2>Notes and caveats<a class="headerlink" href="#notes-and-caveats" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>AOI simplification.</strong> The published figure subtracts a narrow river-corridor strip (the
+levee-to-levee channel) from the Urban Area polygon before classifying, using a shapefile
+custom-digitized by a research collaborator that is not publicly redistributable. This notebook
+uses the <strong>full Urban Area polygon</strong> without that subtraction — expect visible differences
+along the river channel itself (open water and riverbed have their own ET signal, which is noise
+for a residential-land-use story), but the metro-wide pattern should closely match.</p></li>
+<li><p><strong>The 0.7x precipitation coefficient is a modeling choice, not a physical constant</strong> — it
+follows the FAO rule-of-thumb effective-rainfall fraction for arid regions with
+moderate-intensity rainfall (Allen et al., 1998; Brouwer &amp; Heibloem, 1986), not a
+locally-calibrated estimate. A different coefficient would shift the effective-ET baseline and,
+likely to a lesser extent, the trend.</p></li>
+<li><p><strong>Relative classification, not absolute levels.</strong> Median and tercile thresholds are re-derived
+from this specific AOI’s pixel distribution. The same pixel could be classified differently if
+run over a smaller or larger AOI — don’t compare class assignments across different geographies.</p></li>
+<li><p><strong>OpenET resolution (~30 m) and modeling uncertainty.</strong> OpenET is itself an ensemble of six
+remote-sensing ET models; it is well-validated at agricultural field scale but carries more
+uncertainty over heterogeneous urban land cover. Treat this as a neighborhood-scale pattern, not
+a parcel-level or lot-level measurement.</p></li>
+<li><p><strong>A fresh OpenET ensemble pull may differ slightly from the published run</strong> — OpenET has
+updated its ensemble methodology and underlying model versions over time (this replication uses
+the <code class="docutils literal notranslate"><span class="pre">v2_0</span></code> ensemble collection, current as of the published run’s vintage).</p></li>
+</ul>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<p>Allen, R. G., Pereira, L. S., Raes, D., &amp; Smith, M. (1998). <em>Crop evapotranspiration: Guidelines
+for computing crop water requirements</em> (FAO Irrigation and Drainage Paper No. 56). Food and
+Agriculture Organization of the United Nations. <a class="reference external" href="https://openknowledge.fao.org/handle/20.500.14283/cd6621en">https://openknowledge.fao.org/handle/20.500.14283/cd6621en</a></p>
+<p>Brouwer, C., &amp; Heibloem, M. (1986). <em>Irrigation water management: Irrigation water needs</em>
+(Training Manual No. 3). Food and Agriculture Organization of the United Nations.
+<a class="reference external" href="https://www.fao.org/4/s2022e/s2022e00.htm">https://www.fao.org/4/s2022e/s2022e00.htm</a></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks/quadrant_map"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../docs/quadrant_map/README.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">The Greening (and Browning) of the Albuquerque Metro Area — methodology</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../docs/water_access_categories/README.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Lot Size and Water Use by Water-Access Category — methodology</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#method-summary">Method summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-google-earth-engine-account">Setup — Google Earth Engine account</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-define-the-albuquerque-metro-aoi-census-urban-area-public-data">Step 1 — Define the Albuquerque metro AOI (Census Urban Area, public data)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-baseline-effective-et-2001-2005">Step 2 — Baseline effective ET (2001-2005)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-per-pixel-trend-2001-2024">Step 3 — Per-pixel trend (2001-2024)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-download-both-rasters">Step 4 — Download both rasters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-classify-into-five-water-use-categories">Step 5 — Classify into five water-use categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-render-the-map">Step 6 — Render the map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-to-the-published-figure">Compare to the published figure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-and-caveats">Notes and caveats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By John Fleck & Robert P. Berrens
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026, John Fleck and Robert P. Berrens.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p><a href="https://fleck-berrens.org" target="_blank">Fleck–Berrens Lab</a></p>
+<p>Code licensed
+<a href="https://github.com/johnrfleck/New-Mexico-Middle-Rio-Grande-Valley-water-use-analysis/blob/main/LICENSE">MIT</a>.
+Written content and figures licensed
+<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
