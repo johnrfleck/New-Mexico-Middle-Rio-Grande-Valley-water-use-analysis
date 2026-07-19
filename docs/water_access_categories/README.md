@@ -2,7 +2,7 @@
 
 Understanding where domestic wells are located, and how the consumptive use of water on residential parcels with a well relates to residential parcels solely dependent on municipal water, provides a useful tool for understanding trends in consumptive water use in the Middle Rio Grande Valley. While municipal water use is metered and overall trends are widely reported, domestic well water use is unmeasured, and has not played a significant role in Middle Rio Grande Valley water management discourse.
 
-Remote sensing tools, as gathered and freely provided by the OpenET project, allow us to begin assessing usage patterns across this otherwise unmeasured and unmonitored sector. While OpenET lacks the precision needed to measure water use at the scale of a single lot, careful application of the tool allows us to begin looking at relationships and trends of aggregate use across broad categories of similar residential parcels. The data suggest that  residential parcels with domestic wells tend to be substantially larger and substantially greener on average that those served solely by municipal supply.
+Remote sensing tools, as gathered and freely provided by the [OpenET project](https://etdata.org/), allow us to begin assessing usage patterns across this otherwise unmeasured and unmonitored sector. While OpenET lacks the precision needed to measure water use at the scale of a single lot, careful application of the tool allows us to begin looking at relationships and trends of aggregate use across broad categories of similar residential parcels. The data suggest that  residential parcels with domestic wells tend to be substantially larger and substantially greener on average that those served solely by municipal supply.
 
 This note summarizes how the water-access-categories replication notebook
 (`notebooks/water_access_categories/water_access_categories_replication.ipynb`) classifies
@@ -57,7 +57,7 @@ every water source.
 
 ## Method
 
-1. **Population.** All Bernalillo County residential parcels whose representative point falls
+1. **Residential parcels.** All Bernalillo County residential parcels whose representative point falls
    inside the ABCWUA service-area boundary (the OSE Public Water System polygon — see caveats).
 2. **Lot size.** Parcel geometry area (`ACRES`).
 3. **Effective ET.** OpenET ensemble evapotranspiration − 0.7 × GRIDMET precipitation (the same
@@ -78,6 +78,7 @@ every water source.
   maps irrigation-serviceable land, not confirmed acequia shares or actual diversions.
 - **Category membership is a snapshot** (2021 ISOlog, current OSE POD vintage), not tracked
   through time.
+- **Domestic well presence is conservative** Lots are categorized as having domestic wells only if we have a clearly identified domestic well location in the POD database, based on changing Office of State Engineer data collection and recording practice. These are primarily wells drilled after 1990. This has the effect of understating the likely lot size and water use in ABCWUA-only parcels.
 - **`median(A) × median(B) ≠ median(A × B)`.** The total-water-use chart uses each parcel's own
   true per-parcel ET total, not the lot-size median multiplied by the per-acre-ET median — those
   two quantities differ by up to ~10% in the middle categories because lot size and per-acre ET
